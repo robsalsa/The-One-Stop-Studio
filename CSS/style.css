@@ -27,7 +27,7 @@ header{
     margin-right: 20px;
     text-decoration: none;
     color: #333;
-    font-size: 1rem;
+    font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 .header-container a:hover{
@@ -36,7 +36,7 @@ header{
 
 
 .slideshow-container{
-    width: 100%;
+    width: 100;
     /* max-width:100%; */
     text-align: center;
     position: relative;
@@ -45,6 +45,14 @@ header{
 
 .fadeaway{
     display:none;
+}
+.fadeaway img{
+    width: 50%;
+    height: 60%;
+    /* height: 300px; */
+    object-fit: cover;
+    /* display: block; */
+    margin: 0;
 }
 /* 
 .previous, .next{
@@ -154,7 +162,7 @@ review-container{
 
 }
 .social-item{
-    background-color: #DFD3C3;
+    background-color: #D0B8A8;
     padding: 50px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -197,7 +205,7 @@ review-container{
 }
 
 footer{
-    background-color:#D0B8A8;
+    background-color:#DFD3C3;
 }
 .footer p{
     font-size:15px;
@@ -206,10 +214,9 @@ footer{
 }
 .footer h3{
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     width:auto;  
     height: auto;
-    padding: 1%; 
 }
 .footer li{
     font-size: 20px;
