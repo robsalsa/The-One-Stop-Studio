@@ -37,7 +37,7 @@ header{
 
 .slideshow-container{
     width: 100;
-    /* max-width:100%; */
+    max-width:100%;
     text-align: center;
     position: relative;
     margin: auto;
@@ -47,12 +47,11 @@ header{
     display:none;
 }
 .fadeaway img{
-    width: 50%;
-    height: 60%;
+    width: 700px;
     /* height: 300px; */
     object-fit: cover;
-    /* display: block; */
     margin: 0;
+    /* display: block; */
 }
 /* 
 .previous, .next{
