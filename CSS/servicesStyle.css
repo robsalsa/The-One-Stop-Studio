@@ -15,7 +15,7 @@
   margin: 0 auto;
   text-align: center;
 }
-.service-column h1, .service-column h2{
+.service-column h1, .service-column h2, .service-column h3{
     text-align:center;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .service-group h2,
-.service-column h1 {
+.service-column h1, .service-column h2 {
   text-align: center;
 }
 
