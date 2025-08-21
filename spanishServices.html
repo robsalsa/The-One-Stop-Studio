@@ -15,299 +15,139 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- important imports -->
 
-    <title>The One Stop Studio | Spanish Services Page</title>
+    <title>The One Stop Studio | Página de Servicios</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="header-container">
-                <a href="spanishIndex.html">
-                    <img src="Assets/The One Stop Studio.jpg" alt="LOGO HERE...">
 
-                </a>
-                <a href="spanishIndex.html">
-                    <h2>The One Stop Studio</h2>
-                </a>
-                <!-- <h2>The One Stop Studio</h2> -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html">
+                <img src="Assets/The One Stop Studio.jpg" alt="cargando...">
+            </a>
+            <h20>The One Stop Studio</h20>
 
-
-                <div class="nav-links">
-                    <button class="close-button">&times;</button>
-                    <a href="spanishServices.html">Servicios</a>
-                    <!-- <a href="BarberServices.html">Barber Services</a>
-                    <a href="SalonService.html">Salon Services</a>
-                    <a href="TattooServices.html">Tattoo Services</a> -->
-                    <a href="spanishContactUS.html">Encuéntrenos/Contáctenos</a>
-                    <a href="spanishAbout.html">Sobre Nosotras</a>
-                    <a href="spanishIndex.html">Página Principal</a>
-                    <a href="index.html">English</a>
-
-                </div>
-
-                <div class="burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+            <nav class="navbar">
+                <ul class="burger-menu">
+                    <li class="burger-item">
+                        <a href="spanishServices.html">Todos los Servicios</a>
+                    </li>
+                    <li class="burger-item">
+                        <a href="spanishAbout.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="burger-item">
+                        <a href="spanishIndex.html">Inicio</a>
+                    </li>
+                    <li class="burger-item">
+                        <a href="index.html">En Inglés</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main>
-        <div style="text-align:center">
-            <h1>Encuentra lo que estás buscando</h1>
-        </div>
-        <div class="service-filter">
-            <button class="button-54" role="button" data-filter="all">Todos</button>
-            <button class="button-54" role="button" data-filter="barber">Servicios de Barbería</button>
-            <button class="button-54" role="button" data-filter="salon">Servicios de Salón</button>
-            <button class="button-54" role="button" data-filter="other">Otros Servicios</button>
-        </div>
+        <section class="content-section" style="padding-top: 10rem;">
+            <div class="container">
+                <h2 class="section-title">Nuestros Servicios</h2>
 
-        <div class="service-category" data-category="barber">
-            <div class="service-column">
-                <h1 id="barber">Servicios de Barbería</h1>
+                <div class="filter-buttons">
+                    <button data-filter="all">Mostrar Todos</button>
+                    <button data-filter="Barber Services">Barbería</button>
+                    <button data-filter="Beauty Services">Belleza</button>
+                    <button data-filter="Other/Add-On Services">Otros</button>
+                    <button data-filter="Tattoo Services">Tatuajes</button>
+                    <button data-filter="Peircing Services">Piercing</button>
+                </div>
 
-                <div class="review-column">
-                    <h3>(Estándar) Corte de cabello</h3>
-                    <p class="description">TODOS los cortes INCLUYEN navaja</p>
-                    <span class="rating">$40</span>
-                </div>
-                <div class="review-column">
-                    <h3>Corte de cabello con toalla/calor y masaje</h3>
-                    <p class="description">TODOS los cortes INCLUYEN navaja</p>
-                    <span class="rating">$50</span>
-                </div>
-                <div class="review-column">
-                    <h3>Corte de cabello + barba</h3>
-                    <p class="description">TODOS los cortes INCLUYEN navaja</p>
-                    <span class="rating">$55</span>
-                </div>
-                <div class="review-column">
-                    <h3>Corte de cabello + barba con toalla/calor y masaje</h3>
-                    <p class="description">TODOS los cortes INCLUYEN navaja</p>
-                    <span class="rating">$65</span>
-                </div>
-                <div class="review-column">
-                    <h3>Corte de niño (12 años o menos)</h3>
-                    <p class="description">TODOS los cortes INCLUYEN navaja</p>
-                    <span class="rating">$30</span>
-                </div>
-                <div class="review-column">
-                    <h3>Corte de adolescente (13 - 18)</h3>
-                    <p class="description">TODOS los cortes INCLUYEN navaja</p>
-                    <span class="rating">$35</span>
-                </div>
-                <div class="review-column">
-                    <h3>Servicio completo</h3>
-                    <p class="description">
-                        Incluye: Corte de cabello + barba con toalla/calor, masaje y mascarilla facial
-                        TODOS los cortes INCLUYEN navaja
-                    </p>
-                    <span class="rating">$75</span>
-                </div>
-                <div class="review-column">
-                    <h3>Servicio completo (SIN BARBA)</h3>
-                    <p class="description">
-                        Incluye: Corte de cabello con toalla/calor, masaje y mascarilla facial
-                        TODOS los cortes INCLUYEN navaja
-                    </p>
-                    <span class="rating">$60</span>
-                </div>
-                <div class="review-column">
-                    <h3>Depilación de cejas con hilo</h3>
-                    <p class="description">Agrega depilación de cejas con hilo a tu servicio</p>
-                    <span class="rating">$10</span>
-                </div>
-                <div class="review-column">
-                    <h3>Barba (SOLO)</h3>
-                    <span class="rating">$25</span>
-                </div>
-                <div class="review-column">
-                    <h3>Bigote (SOLO)</h3>
-                    <span class="rating">$10</span>
-                </div>
-                <div class="review-column">
-                    <h3>Perfilado (SOLO)</h3>
-                    <span class="rating">$25</span>
-                </div>
-                <div class="review-column">
-                    <h3>Dibujos/Diseños (SOLO)</h3>
-                    <p class="description">
-                        El precio puede variar según tus especificaciones
-                        TODOS los cortes INCLUYEN navaja
-                    </p>
-                    <span class="rating">+$10</span>
+                <div class="services-container">
+
+                    <div class="service-column" data-category="Barber Services">
+                        <h3>Servicios de Barbería</h3>
+                        <div class="service-item">
+                            <h4>Corte y Estilo Exclusivo</h4>
+                            <span class="price">$50</span>
+                        </div>
+                    </div>
+
+                    <div class="service-column" data-category="Beauty Services">
+                        <h3>Servicios de Belleza</h3>
+                        <div class="service-item">
+                            <h4>Corte y Secado</h4>
+                            <span class="price">$80+</span>
+                        </div>
+                    </div>
+
+                    <div class="service-column" data-category="Other/Add-On Services">
+                        <h3>Otros Servicios Adicionales</h3>
+                        <div class="service-item">
+                            <h4>Tratamiento de Keratina</h4>
+                            <span class="price">$300+</span>
+                        </div>
+                    </div>
+
+                    <div class="service-column" data-category="Tattoo Services">
+                        <h3>Servicios de Tatuajes</h3>
+                        <div class="service-item">
+                            <h4>Tatuaje de Cejas</h4>
+                            <span class="price">$200+</span>
+                        </div>
+                    </div>
+
+                    <div class="service-column" data-category="Peircing Services">
+                        <h3>Servicios de Piercing</h3>
+                        <div class="service-item">
+                            <h4>Piercing de Oreja</h4>
+                            <span class="price">$60</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="service-category" data-category="salon">
-            <div class="service-column">
-                <h1 id="salon">Servicios de Salón</h1>
-                <div class="review-column">
-                    <h3>Corte de cabello</h3>
-                    <p class="description">TODOS los cortes INCLUYEN lavado y secado</p>
-                    <span class="rating">$55</span>
-                </div>
-                <div class="review-column">
-                    <h3>Corte de cabello con capas</h3>
-                    <p class="description">TODOS los cortes INCLUYEN lavado y secado</p>
-                    <span class="rating">$65</span>
-                </div>
-                <div class="review-column">
-                    <h3>Shampoo (SOLO)</h3>
-                    <span class="rating">$20</span>
-                </div>
-                <div class="review-column">
-                    <h3>Planchado/Rizos (SOLO)</h3>
-                    <span class="rating">$25</span>
-                </div>
-                <div class="review-column">
-                    <h3>Rapados/Undercuts</h3>
-                    <span class="rating">$25</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="service-category" data-category="other">
-            <div class="service-column">
-                <h1 id="other">Otros Servicios</h1>
-
-                <h2 id="color">Coloración de cabello</h2>
-                <div class="review-column">
-                    <h3>Retoque de color</h3>
-                    <p class="description">NO incluye secado</p>
-                    <span class="rating">$50</span>
-                </div>
-                <div class="review-column">
-                    <h3>Color completo</h3>
-                    <span class="rating">$80</span>
-                </div>
-                <div class="review-column">
-                    <h3>Decoloración y matiz</h3>
-                    <p class="description">El precio puede variar</p>
-                    <span class="rating">+$160</span>
-                </div>
-                <div class="review-column">
-                    <h3>Aclarado</h3>
-                    <p class="description">El precio puede variar</p>
-                    <span class="rating">+$65</span>
-                </div>
-                <div class="review-column">
-                    <h3>Reflejos bajos (Low-Lights)</h3>
-                    <p class="description">El precio puede variar</p>
-                    <span class="rating">+$65</span>
-                </div>
-                <div class="review-column">
-                    <h3>Reflejos altos (High-Lights)</h3>
-                    <p class="description">El precio puede variar</p>
-                    <span class="rating">+$120</span>
-                </div>
-
-                <h2 id="piercings">Perforaciones</h2>
-                <div class="review-column">
-                    <h3>Nariz</h3>
-                    <span class="rating">$30</span>
-                </div>
-                <div class="review-column">
-                    <h3>Oreja</h3>
-                    <span class="rating">$55</span>
-                </div>
-
-                <h2 id="braids">Trenzas</h2>
-                <div class="review-column">
-                    <h3>Corte de cabello regular y trenzas</h3>
-                    <p class="description">El precio puede variar</p>
-                    <span class="rating">+$70</span>
-                </div>
-                <div class="review-column">
-                    <h3>Corte de cabello regular + barba + trenzas</h3>
-                    <p class="description">El precio puede variar</p>
-                    <span class="rating">+$80</span>
-                </div>
-                <div class="review-column">
-                    <h3>Trenzas tipo box</h3>
-                    <p class="description">El precio puede variar</p>
-                    <span class="rating">+$120</span>
-                </div>
-                <div class="review-column">
-                    <h3>2 trenzas (SOLO)</h3>
-                    <span class="rating">$30</span>
-                </div>
-
-                <h2 id="threading">Depilación con hilo</h2>
-                <div class="review-column">
-                    <h3>Cejas (SOLO)</h3>
-                    <span class="rating">$13</span>
-                </div>
-                <div class="review-column">
-                    <h3>Cejas y labio</h3>
-                    <span class="rating">$20</span>
-                </div>
-                <div class="review-column">
-                    <h3>Rostro completo</h3>
-                    <span class="rating">$30</span>
-                </div>
-
-                <h2 id="tattoos">Maquillaje permanente (tatuaje cosmético)</h2>
-                <div class="review-column">
-                    <h3>Lifting de pestañas</h3>
-                    <p class="description">
-                        Retoque - $35
-                        Tinte - $15
-                    </p>
-                    <span class="rating">$80</span>
-                </div>
-                <div class="review-column">
-                    <h3>Laminado de cejas</h3>
-                    <p class="description">Tinte - $25</p>
-                    <span class="rating">$80</span>
-                </div>
-                <div class="review-column">
-                    <h3>Microblading (sombreado con tatuaje)</h3>
-                    <p class="description">Retoque - $200</p>
-                    <span class="rating">$375</span>
-                </div>
-            </div>
-        </div>
     </main>
 
-
-
-    <footer class="footer">
-        <h3>THE ONE STOP STUDIO</h3>
-
-        <div class="footer-location">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d988.183041912766!2d-118.30925409106783!3d34.02838015117795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b79db660ffbb%3A0x465d852ad147c4cb!2sThe%20One%20Stop%20Studio!5e0!3m2!1sen!2sus!4v1748734461845!5m2!1sen!2sus"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-
+   
+<footer class="footer">
+    <div class="footer-container">
         <div class="footer-content">
-            <ul class="footer-content">
-                <li><a href="https://maps.app.goo.gl/ctUo9QRZSwRX4Ekp9">Dirección</a></li>
-
-                <li>Contáctenos: (424) 757-2546</li>
-                <!-- Maybe this could be something like "make an appointment Now!!" -->
-
-
-
-
-                <li>Sociales: <a href="">Instagram</a>, <a href="">Twitter</a>, and <a href="">TikTok</a> </li>
-
-            </ul>
-            <p>hecho con dolor de cuello y por <a href="https://operation-null-trace.vercel.app/"> Roberto S.V.</a></p>
+            <div class="footer-section">
+                <h7>The One Stop Studio</h7>
+                <p>Haciéndote <span class="buzzword-wrapper"><span class="buzzword">hermoso/a</span> </span> desde 2017.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h7>Nuestra Ubicación</h7>
+                <address>2922 S Western Ave, Los Ángeles, CA 90018</address>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d988.183041912766!2d-118.30925409106783!3d34.02838015117795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b79db660ffbb%3A0x465d852ad147c4cb!2sThe%20One%20Stop%20Studio!5e0!3m2!1sen!2sus!4v1748734461845!5m2!1sen!2sus"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            <div class="footer-section">
+                <a href="https://www.instagram.com/theonestopstudiollc/">Síguenos</a>
+            </div>
         </div>
-    </footer>
+        <div class="footer-bottom">
+            <p>&copy; The One Stop Studio .llc,  Todos los Derechos Reservados.</p>
+        </div>
+    </div>
+</footer>
 
 </body>
 
 <script src="scripts/serviceFilter.js"></script>
 <script src="scripts/slideshow.js"></script>
 <script src="scripts/burgerMenu.js"></script>
+<script src="script/footerWordSpanish.js"></script>
 
 
 </html>
