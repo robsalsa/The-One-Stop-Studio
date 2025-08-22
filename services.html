@@ -7,8 +7,8 @@
 
     <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/servicesStyle.css" <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="CSS/servicesStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
@@ -31,9 +31,6 @@
                 <ul class="burger-menu">
                     <li class="burger-item">
                         <a href="services.html">All Services</a>
-                    </li>
-                    <li class="burger-item">
-                        <a href="otherServices.html">Other Services</a>
                     </li>
                     <li class="burger-item">
                         <a href="about.html">About Us</a>
@@ -66,53 +63,11 @@
                     <button data-filter="Barber Services">Barber</button>
                     <button data-filter="Beauty Services">Beauty</button>
                     <button data-filter="Other/Add-On Services">Other</button>
-                    <button data-filter="Tattoo Services">Tattoo</button>
-                    <button data-filter="Peircing Services">Piercing</button>
+                    <button data-filter="Permanent Cosmetic services">Permanent Cosmetics</button>
+                    <button data-filter="Piercing Services">Piercings</button>
                 </div>
 
-                <div class="services-container">
-
-                    <div class="service-column" data-category="Barber Services">
-                        <h3>Barber Services</h3>
-                        <div class="service-item">
-                            <h4>Signature Cut & Style</h4>
-                            <span class="price">$50</span>
-                        </div>
-                    </div>
-
-                    <div class="service-column" data-category="Beauty Services">
-                        <h3>Beauty Services</h3>
-                        <div class="service-item">
-                            <h4>Cut & Blow-Dry</h4>
-                            <span class="price">$80+</span>
-                        </div>
-                    </div>
-
-                    <div class="service-column" data-category="Other/Add-On Services">
-                        <h3>Other/Add-On Services</h3>
-                        <div class="service-item">
-                            <h4>Keratin Treatment</h4>
-                            <span class="price">$300+</span>
-                        </div>
-                    </div>
-
-                    <div class="service-column" data-category="Tattoo Services">
-                        <h3>Tattoo Services</h3>
-                        <div class="service-item">
-                            <h4>Eyebrow Tattoo</h4>
-                            <span class="price">$200+</span>
-                        </div>
-                    </div>
-
-                    <div class="service-column" data-category="Peircing Services">
-                        <h3>Piercing Services</h3>
-                        <div class="service-item">
-                            <h4>Ear Piercing</h4>
-                            <span class="price">$60</span>
-                        </div>
-                    </div>
-
-                </div>
+                <div class="services-container" id="servicesContainer"></div>
             </div>
         </section>
 
@@ -151,6 +106,7 @@
 
 </body>
 
+<script src="scripts/jsonButNot.js"></script>
 <script src="scripts/serviceFilter.js"></script>
 <script src="scripts/slideshow.js"></script>
 <script src="scripts/burgerMenu.js"></script>
