@@ -13,7 +13,7 @@ const servicesData = [
         ]
     },
     {
-        "category": "Salon services",
+        "category": "Beauty services",
         "services": [
             {
                 "name": "The LONG Regular",
@@ -31,7 +31,7 @@ const servicesData = [
         ]
     },
     {
-        "category": "Permanent Cosmetics",
+        "category": "Permanent Cosmetic services",
         "services": [
             {
                 "name": "Eyebrow",
@@ -40,7 +40,7 @@ const servicesData = [
         ]
     },
     {
-        "category": "Piercing",
+        "category": "Piercing services",
         "services": [
             {
                 "name": "Ear",
