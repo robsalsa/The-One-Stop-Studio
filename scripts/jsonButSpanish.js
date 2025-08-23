@@ -31,7 +31,7 @@ const spanishData = [
         ]
     },
     {
-        "category": "Permanent Cosmetic",
+        "category": "Cosméticos permanentes",
         "services": [
             {
                 "name": "Cejas",
