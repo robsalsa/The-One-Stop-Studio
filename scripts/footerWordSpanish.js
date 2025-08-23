@@ -1,4 +1,3 @@
-// Buzzword animation in footer
 document.addEventListener('DOMContentLoaded', () => {
     const buzzwords = ["hermoso/a", "magnífico/a", "espectacular", "magnífico/a", "deslumbrante", "impresionante", "encantador/a"];
   
