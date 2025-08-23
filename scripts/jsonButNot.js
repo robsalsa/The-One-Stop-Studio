@@ -34,8 +34,16 @@ const servicesData = [
         "category": "Permanent Cosmetic services",
         "services": [
             {
-                "name": "Eyebrow",
-                "price": "$100+"
+                "name": "Lash Lift",
+                "price": "$80+"
+            },
+            {
+                "name": "Eyebrow Laminatior",
+                "price": "$80+"
+            },
+            {
+                "name": "Microbladding",
+                "price": "$380+"
             }
         ]
     },
@@ -44,7 +52,11 @@ const servicesData = [
         "services": [
             {
                 "name": "Ear",
-                "price": "$100+"
+                "price": "$60"
+            },
+            {
+                "name": "Nose",
+                "price": "$30",
             }
         ]   
     }
