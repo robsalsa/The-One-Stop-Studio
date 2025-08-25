@@ -63,6 +63,8 @@ const servicesData = [
 ];
 
 const container = document.getElementById("servicesContainer");
+
+
 servicesData.forEach(category => {
   const col = document.createElement("div");
   col.className = "service-column";
