@@ -1,6 +1,6 @@
 const spanishData = [
    {
-    "category": "Servicios de Barbería",
+    "category": "Barbería",
     "services": [
         { "name": "Corte de cabello (Fades/Degradados)", "price": "$50" },
         { "name": "Corte de cabello y cejas", "price": "$60" },
@@ -22,7 +22,7 @@ const spanishData = [
     ]
 },
 {
-    "category": "Servicios de Belleza",
+    "category": "Belleza",
     "services": [
         { "name": "¡Los cortes de cabello se hacen SOLO con tijeras!", "price": "" },
         { "name": "Corte de cabello (Recto) — SIN CAPAS", "price": "$50" },
@@ -51,7 +51,7 @@ const spanishData = [
     ]
 },
 {
-    "category": "Otros/Servicios Adicionales",
+    "category": "Otros",
     "services": [
         { "name": "Depilación de cejas con hilo / Cera", "price": "$20" },
         { "name": "Cejas y labio", "price": "$27" },
@@ -65,7 +65,7 @@ const spanishData = [
     ]
 },
 {
-    "category": "Servicios Cosméticos Permanentes",
+    "category": "Cosméticos permanentes",
     "services": [
         { "name": "Microblading", "price": "$400" },
         { "name": "Sombreado con tatuaje", "price": "$350" },
@@ -73,7 +73,7 @@ const spanishData = [
     ]
 },
 {
-    "category": "Servicios de Perforación",
+    "category": "Piercing",
     "services":[
         { "name": "Perforación de nariz", "price": "$25" },
         { "name": "Perforación de lóbulo de oreja", "price": "$55" }
