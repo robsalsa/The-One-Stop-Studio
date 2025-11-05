@@ -5,9 +5,9 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'oneStopShop',
+  title: 'theonestopstudio',
 
-  projectId: 'j2hhua6h',
+  projectId: 'goyzu79a',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],
