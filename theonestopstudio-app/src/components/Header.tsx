@@ -42,7 +42,7 @@ export default function Header() {
               </Link>
             </li>
             <li className="burger-item">
-              <Link href={isSpanish ? "/es/coming-soon" : "/coming-soon"} onClick={() => setMenuOpen(false)}>
+              <Link href={isSpanish ? "/es/booking" : "/booking"} onClick={() => setMenuOpen(false)}>
                 {isSpanish ? "Reservar" : "Book an Appointment"}
               </Link>
             </li>
