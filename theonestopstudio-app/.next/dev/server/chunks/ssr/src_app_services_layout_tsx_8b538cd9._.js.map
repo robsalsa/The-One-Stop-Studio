@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/Rober/OneDrive/Documents/GitHub/The-One-Stop-Studio/theonestopstudio-app/src/app/services/layout.tsx"],"sourcesContent":["import \"../../styles/legacy/servicesStyle.css\";\r\n\r\nexport default function ServicesLayout({\r\n  children,\r\n}: Readonly<{ children: React.ReactNode }>) {\r\n  return children;\r\n}\r\n"],"names":[],"mappings":";;;;;AAEe,SAAS,eAAe,EACrC,QAAQ,EACgC;IACxC,OAAO;AACT","debugId":null}}]
+}

@@ -1,0 +1,1603 @@
+[00:00:05.667] Server  LOG      ✓ Ready in 3.9s
+[00:00:14.278] Server  LOG      ○ Compiling /services ...
+[00:00:26.765] Server  ERROR    ⨯ ./src/app/services/page.tsx:8:14
+Ecmascript file had an error
+   6 | import "./services.css";
+   7 |
+>  8 | export const metadata = {
+     |              ^^^^^^^^
+   9 |   title: "Services | The One Stop Studio",
+  10 | };
+  11 |
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+
+[00:00:30.540] Browser ERROR   uncaughtError: Error: ./src/app/services/page.tsx:8:14
+Ecmascript file had an error
+   6 | import "./services.css";
+   7 |
+>  8 | export const metadata = {
+     |              ^^^^^^^^
+   9 |   title: "Services | The One Stop Studio",
+  10 | };
+  11 |
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+
+[00:00:30.840] Browser ERROR   ./src/app/services/page.tsx:8:14
+Ecmascript file had an error
+   6 | import "./services.css";
+   7 |
+>  8 | export const metadata = {
+     |              ^^^^^^^^
+   9 |   title: "Services | The One Stop Studio",
+  10 | };
+  11 |
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+[00:00:32.490] Browser ERROR   ./src/app/services/page.tsx:8:14
+Ecmascript file had an error
+   6 | import "./services.css";
+   7 |
+>  8 | export const metadata = {
+     |              ^^^^^^^^
+   9 |   title: "Services | The One Stop Studio",
+  10 | };
+  11 |
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+[00:01:57.952] Browser ERROR   ./src/app/services/page.tsx:8:14
+Ecmascript file had an error
+   6 | import "./services.css";
+   7 |
+>  8 | export const metadata = {
+     |              ^^^^^^^^
+   9 |   title: "Services | The One Stop Studio",
+  10 | };
+  11 |
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+[00:02:00.058] Browser ERROR   ./src/app/services/page.tsx:8:14
+Ecmascript file had an error
+   6 | import "./services.css";
+   7 |
+>  8 | export const metadata = {
+     |              ^^^^^^^^
+   9 |   title: "Services | The One Stop Studio",
+  10 | };
+  11 |
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+[00:02:44.300] Browser ERROR   ./src/app/services/page.tsx:9:14
+Ecmascript file had an error
+   7 | import "./services.css";
+   8 |
+>  9 | export const metadata = {
+     |              ^^^^^^^^
+  10 |   title: "Services | The One Stop Studio",
+  11 | };
+  12 |
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+[00:03:00.399] Server  ERROR    ⨯ ./src/app/services/page.tsx:9:14
+Ecmascript file had an error
+   7 | import "./services.css";
+   8 |
+>  9 | export const metadata = {
+     |              ^^^^^^^^
+  10 |   title: "Services | The One Stop Studio",
+  11 | };
+  12 |
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+
+[00:03:00.819] Browser ERROR   uncaughtError: Error: ./src/app/services/page.tsx:9:14
+Ecmascript file had an error
+   7 | import "./services.css";
+   8 |
+>  9 | export const metadata = {
+     |              ^^^^^^^^
+  10 |   title: "Services | The One Stop Studio",
+  11 | };
+  12 |
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+
+[00:03:00.988] Browser ERROR   ./src/app/services/page.tsx:9:14
+Ecmascript file had an error
+   7 | import "./services.css";
+   8 |
+>  9 | export const metadata = {
+     |              ^^^^^^^^
+  10 |   title: "Services | The One Stop Studio",
+  11 | };
+  12 |
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+[00:03:01.091] Browser ERROR   ./src/app/services/page.tsx:9:14
+Ecmascript file had an error
+   7 | import "./services.css";
+   8 |
+>  9 | export const metadata = {
+     |              ^^^^^^^^
+  10 |   title: "Services | The One Stop Studio",
+  11 | };
+  12 |
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+[00:03:15.261] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:15.546] Browser WARN    Image with src "/Assets/The One Stop Studio.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:05:34.780] Server  LOG      ✓ Compiled in 695ms
+[00:05:34.889] Browser ERROR   ./src/app/services/page.tsx:9:14
+Ecmascript file had an error
+   7 | import "./services.css";
+   8 |
+>  9 | export const metadata = {
+     |              ^^^^^^^^
+  10 |   title: "Services | The One Stop Studio",
+  11 | };
+  12 |
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+[00:06:00.233] Server  ERROR    ⨯ ./src/app/services/page.tsx:9:14
+Ecmascript file had an error
+   7 | import "./services.css";
+   8 |
+>  9 | export const metadata = {
+     |              ^^^^^^^^
+  10 |   title: "Services | The One Stop Studio",
+  11 | };
+  12 |
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+
+[00:06:00.613] Browser ERROR   uncaughtError: Error: ./src/app/services/page.tsx:9:14
+Ecmascript file had an error
+   7 | import "./services.css";
+   8 |
+>  9 | export const metadata = {
+     |              ^^^^^^^^
+  10 |   title: "Services | The One Stop Studio",
+  11 | };
+  12 |
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+
+[00:06:00.808] Browser ERROR   ./src/app/services/page.tsx:9:14
+Ecmascript file had an error
+   7 | import "./services.css";
+   8 |
+>  9 | export const metadata = {
+     |              ^^^^^^^^
+  10 |   title: "Services | The One Stop Studio",
+  11 | };
+  12 |
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+[00:06:00.808] Browser ERROR   ./src/app/services/page.tsx:9:14
+Ecmascript file had an error
+   7 | import "./services.css";
+   8 |
+>  9 | export const metadata = {
+     |              ^^^^^^^^
+  10 |   title: "Services | The One Stop Studio",
+  11 | };
+  12 |
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+[00:07:23.495] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import { servicesData, categoryFilters } from "@/data/servicesData";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | export const metadata = {
+
+Import map: aliased to relative './src/data/servicesData' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:23.500] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import { servicesData, categoryFilters } from "@/data/servicesData";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | export const metadata = {
+
+Import map: aliased to relative './src/data/servicesData' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:23.509] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import { servicesData, categoryFilters } from "@/data/servicesData";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | export const metadata = {
+
+Import map: aliased to relative './src/data/servicesData' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:23.514] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import { servicesData, categoryFilters } from "@/data/servicesData";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | export const metadata = {
+
+Import map: aliased to relative './src/data/servicesData' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:23.520] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import { servicesData, categoryFilters } from "@/data/servicesData";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | export const metadata = {
+
+Import map: aliased to relative './src/data/servicesData' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:23.525] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import { servicesData, categoryFilters } from "@/data/servicesData";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | export const metadata = {
+
+Import map: aliased to relative './src/data/servicesData' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:07:23.655] Browser ERROR   ./src/app/services/page.tsx:9:14
+Ecmascript file had an error
+   7 | import "./services.css";
+   8 |
+>  9 | export const metadata = {
+     |              ^^^^^^^^
+  10 |   title: "Services | The One Stop Studio",
+  11 | };
+  12 |
+
+You are attempting to export "metadata" from a component marked with "use client", which is disallowed. Either remove the export, or the "use client" directive. Read more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+[00:07:23.655] Browser ERROR   ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import { servicesData, categoryFilters } from "@/data/servicesData";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | export const metadata = {
+
+Import map: aliased to relative './src/data/servicesData' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:07:26.500] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:26.692] Browser WARN    Image with src "/Assets/The One Stop Studio.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:08:00.922] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:00.931] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:00.936] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:00.943] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.016] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.025] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.033] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.036] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.041] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.048] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.052] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.056] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.064] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.068] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.071] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.076] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.086] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.090] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.098] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.102] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.109] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.118] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.123] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.129] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.135] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.139] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.145] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.150] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.155] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.164] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.168] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.172] Server  ERROR    ⨯ ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:01.184] Server  LOG      ✓ Compiled in 628ms
+[00:08:01.301] Browser ERROR   ./src/app/services/page.tsx:6:1
+Module not found: Can't resolve '@/data/servicesData.json'
+  4 | import Header from "@/components/Header";
+  5 | import Footer from "@/components/Footer";
+> 6 | import servicesData from "@/data/servicesData.json";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import "./services.css";
+  8 |
+  9 | interface ServiceItem {
+
+Import map: aliased to relative './src/data/servicesData.json' inside of [project]/
+
+Import traces:
+  Client Component Browser:
+    ./src/app/services/page.tsx [Client Component Browser]
+    ./src/app/services/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:36.968] Server  LOG      ✓ Compiled in 102ms
+[00:08:37.077] Browser ERROR   ./src/data/servicesData.json
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/src/data/servicesData.json (json)
+
+Caused by:
+- Unable to make a module from invalid JSON: EOF while parsing a value at line 1 column 0
+
+Debug info:
+- An error occurred while generating the chunk item [project]/src/data/servicesData.json (json)
+- Execution of <JsonChunkItem as EcmascriptChunkItem>::content failed
+- Unable to make a module from invalid JSON: EOF while parsing a value at line 1 column 0
+    at .
+
+Import trace:
+  Client Component SSR:
+    ./src/data/servicesData.json
+    ./src/app/services/page.tsx [Client Component SSR]
+    ./src/app/services/page.tsx [Server Component]
+[00:10:43.672] Server  LOG      ✓ Compiled in 228ms
+[00:12:34.750] Server  LOG      ✓ Compiled in 653ms
+[00:13:56.258] Server  LOG      ✓ Compiled in 201ms
+[00:17:01.382] Server  LOG      ✓ Compiled in 160ms
+[00:17:39.595] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:17:40.157] Browser WARN    Image with src "/Assets/The One Stop Studio.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:18:48.491] Server  WARN     ⚠ The requested resource "/Assets/comingsoonbear.gif" is an animated image so it will not be optimized. Consider adding the "unoptimized" property to the <Image>.
+[00:19:35.090] Server  LOG      ✓ Compiled in 282ms
+[00:19:35.829] Server  WARN     ⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:19:37.896] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:38.401] Browser WARN    Image with src "/Assets/The One Stop Studio.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:26:29.564] Server  LOG      ✓ Compiled in 178ms
+[00:26:52.383] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:30:26.657] Server  LOG      ✓ Compiled in 213ms
+[00:30:53.070] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:47.099] Server  LOG      ✓ Compiled in 117ms
+[00:33:11.691] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:26.376] Server  LOG      ✓ Compiled in 148ms
+[00:35:02.139] Server  LOG      ✓ Compiled in 78ms
+[00:35:36.630] Server  LOG      ✓ Compiled in 167ms
+[00:35:44.126] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:36:36.116] Server  LOG      ✓ Compiled in 125ms
+[00:36:47.770] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:37:17.874] Server  LOG      ✓ Compiled in 128ms
+[00:37:22.716] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:37:50.618] Server  LOG      ✓ Compiled in 128ms
+[00:39:08.192] Server  LOG      ✓ Compiled in 219ms
+[00:39:08.641] Server  LOG      ✓ Compiled in 209ms
+[00:39:11.672] Server  LOG      ✓ Compiled in 179ms
+[00:39:44.468] Server  LOG      ✓ Compiled in 245ms
+[00:40:02.412] Server  LOG      ✓ Compiled in 237ms
+[00:43:37.508] Server  LOG      ✓ Compiled in 357ms
+[00:46:45.905] Server  LOG      ✓ Compiled in 958ms
+[00:47:20.633] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:47:20.992] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndFocusHandler segmentPath={[...]}>
+        <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="booking/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/booking" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="booking/pa...">
+                        <SegmentTrieNode>
+                        <ClientPageRoot Component={function BookingPage} serverProvidedParams={{...}}>
+                          <BookingPage params={Promise} searchParams={Promise}>
+                            <div
+                              style={{display:"flex",flexDirection:"column",width:"100%",minHeight:"100vh",margin:0,padding:0,backgroundColor:"..."}}
++                             className="jsx-aca3a37f44745f73"
+-                             className="jsx-e694e39949f64940"
+                            >
+                              <div
+                                style={{display:"flex",flexDirection:"row",width:"100%",minHeight:"100vh"}}
++                               className="jsx-aca3a37f44745f73 booking-layout"
+-                               className="jsx-e694e39949f64940 booking-layout"
+                              >
+                                <div
+                                  style={{width:"100%",backgroundColor:"var(--seco...",color:"var(--seco...",padding:"2rem",display:"flex", ...}}
++                                 className="booking-info"
+-                                 className="jsx-e694e39949f64940 booking-info"
+                                >
+                                  <h1
+                                    style={{fontSize:"2rem",marginBottom:"1.5rem",fontWeight:"bold",fontFamily:"Georgia, s..."}}
+-                                   className="jsx-e694e39949f64940"
+                                  >
++                                   Book Your Appointment
+                                  <p
+                                    style={{fontSize:"1rem",marginBottom:"2rem",lineHeight:"1.6",opacity:0.9}}
+-                                   className="jsx-e694e39949f64940"
+                                  >
++                                   Schedule your next haircut at The One Stop Studio. Choose a time that works best fo...
+                                  <div
+                                    style={{marginTop:"1rem"}}
+-                                   className="jsx-e694e39949f64940"
+                                  >
+                                    <div
+                                      style={{marginBottom:"1.5rem"}}
+-                                     className="jsx-e694e39949f64940"
+                                    >
+                                      <h3
+                                        style={{fontSize:"1.1rem",marginBottom:"0.5rem",color:"var(--seco..."}}
+-                                       className="jsx-e694e39949f64940"
+                                      >
++                                       ⏱️ Duration
+                                      <p
+                                        style={{opacity:0.8}}
+-                                       className="jsx-e694e39949f64940"
+                                      >
++                                       30-minute appointment
+                                    <div
+                                      style={{marginBottom:"1.5rem"}}
+-                                     className="jsx-e694e39949f64940"
+                                    >
+                                      <h3
+                                        style={{fontSize:"1.1rem",marginBottom:"0.5rem",color:"var(--seco..."}}
+-                                       className="jsx-e694e39949f64940"
+                                      >
++                                       📍 Location
+                                      <p
+                                        style={{opacity:0.8}}
+-                                       className="jsx-e694e39949f64940"
+                                      >
++                                       The One Stop Studio
+                                    <div
+                                      style={{marginBottom:"1.5rem"}}
+-                                     className="jsx-e694e39949f64940"
+                                    >
+                                      <h3
+                                        style={{fontSize:"1.1rem",marginBottom:"0.5rem",color:"var(--seco..."}}
+-                                       className="jsx-e694e39949f64940"
+                                      >
++                                       ✂️ Service
+                                      <p
+                                        style={{opacity:0.8}}
+-                                       className="jsx-e694e39949f64940"
+                                      >
++                                       Professional Haircut
+                                  <div
+                                    style={{marginTop:"auto",paddingTop:"2rem",borderTop:"1px solid ...",opacity:0.7,fontSize:"0.9rem"}}
+-                                   className="jsx-e694e39949f64940"
+                                  >
+                                    <p
+-                                     className="jsx-e694e39949f64940"
+                                    >
++                                     Please arrive 5 minutes early for your appointment.
+                                <div
+                                  style={{flex:1,width:"100%",minHeight:"100vh"}}
++                                 className="jsx-aca3a37f44745f73 booking-widget"
+-                                 className="jsx-e694e39949f64940 booking-widget"
+                                >
+                                  <div
+                                    data-url={"https://calendly.com/roberts8443/30min?hide_event_type_details=1&hide_..."}
+                                    style={{minWidth:"320px",height:"100%",width:"100%",minHeight:"100vh"}}
++                                   className="jsx-aca3a37f44745f73 calendly-inline-widget"
+-                                   className="jsx-e694e39949f64940 calendly-inline-widget"
+                                  >
+                              ...
+                      ...
+                    ...
+          ...
+
+[00:47:37.226] Server  ERROR    ⨯ Error: The default export is not a React Component in "/booking/page"
+[00:47:38.057] Server  ERROR    ⨯ Error: The default export is not a React Component in "/booking/page"
+[00:47:39.036] Server  ERROR    ⨯ Error: The default export is not a React Component in "/booking/page"
+[00:47:40.121] Server  ERROR    ⨯ Error: The default export is not a React Component in "/booking/page"
+[00:47:41.264] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/booking/page"
+[00:48:36.826] Server  LOG      ✓ Compiled in 267ms
+[00:48:38.736] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:48:39.139] Browser WARN    Image with src "/Assets/The One Stop Studio.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:51:21.451] Server  LOG      ✓ Compiled in 109ms
+[00:52:47.935] Server  LOG      ✓ Compiled in 127ms
+[00:53:04.606] Server  LOG      ✓ Compiled in 201ms
+[00:54:38.498] Server  LOG      ✓ Compiled in 160ms
+[00:54:38.677] Browser ERROR   ./src/app/booking/page.tsx:23:64
+Parsing ecmascript source code failed
+  21 |     <>
+  22 |       <Header />
+> 23 |       <main style={{ minHeight: "100%", padding: "2rem 0", font-size:"50px" }}>
+     |                                                                ^
+  24 |         <div
+  25 |           className="calendly-inline-widget"
+  26 |           data-url="https://calendly.com/roberts8443/30min?hide_event_type_details=1&hide_gdpr_banner=1"
+
+Expected a semicolon
+
+Import traces:
+  Client Component Browser:
+    ./src/app/booking/page.tsx [Client Component Browser]
+    ./src/app/booking/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/booking/page.tsx [Client Component SSR]
+    ./src/app/booking/page.tsx [Server Component]
+[00:54:38.677] Browser ERROR   ./src/app/booking/page.tsx:23:64
+Parsing ecmascript source code failed
+  21 |     <>
+  22 |       <Header />
+> 23 |       <main style={{ minHeight: "100%", padding: "2rem 0", font-size:"50px" }}>
+     |                                                                ^
+  24 |         <div
+  25 |           className="calendly-inline-widget"
+  26 |           data-url="https://calendly.com/roberts8443/30min?hide_event_type_details=1&hide_gdpr_banner=1"
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/booking/page.tsx [Client Component Browser]
+    ./src/app/booking/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/booking/page.tsx [Client Component SSR]
+    ./src/app/booking/page.tsx [Server Component]
+[00:55:10.051] Server  LOG      ✓ Compiled in 147ms
+[00:55:17.887] Server  LOG      ✓ Compiled in 209ms
+[00:55:32.077] Server  LOG      ✓ Compiled in 121ms
+[00:56:25.941] Server  LOG      ✓ Compiled in 90ms
+[00:56:39.605] Server  LOG      ✓ Compiled in 187ms
+[00:56:44.769] Server  LOG      ✓ Compiled in 188ms
+[00:56:53.598] Server  LOG      ✓ Compiled in 188ms
+[00:56:58.842] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:56:59.183] Browser WARN    Image with src "/Assets/The One Stop Studio.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:03:09.129] Server  LOG      ✓ Compiled in 691ms
+[01:05:18.180] Server  LOG      ✓ Compiled in 257ms
