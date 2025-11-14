@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const slides = [
@@ -19,24 +18,31 @@ export default function Slideshow() {
   }, []);
 
   return (
-    <div className="mx-auto w-full max-w-4xl">
-      <div className="relative aspect-[16/9] overflow-hidden rounded-lg border border-black/10 dark:border-white/10">
-        {slides.map((s, i) => (
-          <div
-            key={s.src}
-            className={`absolute inset-0 transition-opacity duration-700 ${i === index ? "opacity-100" : "opacity-0"}`}
-          >
-            <Image src={s.src} alt={s.alt} fill className="object-cover" priority={i === index} />
-          </div>
-        ))}
-      </div>
-      <div className="mt-3 flex justify-center gap-2">
+    <div className="slideshow-container" aria-label="Image slideshow">
+      {slides.map((s, i) => (
+        <div
+          key={s.src}
+          className={`fadeaway ${i === index ? "fade" : ""}`}
+          style={{ display: i === index ? "block" : "none" }}
+          aria-hidden={i !== index}
+        >
+          <div className="numberImage" />
+          {/* Use natural image size */}
+          <img src={s.src} alt={s.alt} style={{ display: "block", margin: "40px auto 0" }} />
+        </div>
+      ))}
+      <div style={{ textAlign: "center", marginTop: "10px" }}>
         {slides.map((_, i) => (
-          <button
+          <span
             key={i}
-            aria-label={`Go to slide ${i + 1}`}
+            className={`dot ${i === index ? "active-dot" : ""}`}
             onClick={() => setIndex(i)}
-            className={`h-2 w-2 rounded-full ${i === index ? "bg-black dark:bg-white" : "bg-black/30 dark:bg-white/30"}`}
+            role="button"
+            aria-label={`Go to slide ${i + 1}`}
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") setIndex(i);
+            }}
           />
         ))}
       </div>
