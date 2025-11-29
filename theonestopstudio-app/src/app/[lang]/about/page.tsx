@@ -25,6 +25,11 @@ export default function AboutPage() {
     ? "ko"
     : "en";
 
+  // Set page title for Google Analytics
+  useEffect(() => {
+    document.title = "About Us - The One Stop Studio";
+  }, []);
+
   // Get translations for current language, fallback to 'en'
   const t: Translations = translations[lang as keyof typeof translations] || translations.en;
 
