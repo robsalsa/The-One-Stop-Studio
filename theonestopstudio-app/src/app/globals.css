@@ -67,7 +67,7 @@ body {
     align-items: center;
 }
 
-.header h20 {
+.header .site-title {
     font-size: 1.6rem;
     font-weight: 700;
     color: black;
@@ -171,7 +171,7 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-    .header h20 {
+    .header .site-title {
         font-size: 1.2rem;
     }
     .burger-item {
@@ -597,7 +597,7 @@ button4:active .button_top {
 }
 
 
-.header h20{
+.header .site-title{
   color: black;
   font-size: 1.6rem;
 }

@@ -61,7 +61,7 @@ export default function Header() {
         </Link>
 
         <Link  href={lang === "es" ? "/es" : lang === "ko" ? "/ko" : "/en"}>
-          <h2>
+          <h2 className="site-title">
             The One Stop Studio
           </h2>
         
