@@ -1,0 +1,137 @@
+
+
+
+.section-title {
+    font-family: var(--secondary-color-One);
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: -100px;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color-Three);
+    margin: 1rem auto 0;
+}
+
+
+/* Services */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.service-column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    background: var(--secondary-color-Two);
+    padding: 2.5rem;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.service-column h3 {
+    /* font-family: var(--secondary-color-Three); */
+    font-size: 2.5rem;
+    color: var(--accent-color-Three);
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--secondary-color-Three);
+    padding-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 1.5rem;
+}
+.service-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.service-item h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.service-item .price {
+    font-weight: 700;
+    color: var(--secondary-color-One);
+    white-space: nowrap;
+    margin-left: 1rem;
+    font-size: 1.1rem;
+}
+/* Filter Buttons */
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.filter-buttons button {
+  margin: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #f77a8c; /* your accent color */
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.filter-buttons button:hover {
+  background-color: #d85d73;
+  transform: scale(1.05);
+}
+
+.filter-buttons button.active {
+  background-color: #1a1a1a; /* highlight active filter */
+  color: #fff;
+}
+
+/* Service Columns */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.service-column {
+  flex: 1 1 250px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.service-item {
+  margin-bottom: 1rem;
+}
+
+.service-item h4 {
+  margin: 0;
+}
+
+.service-item .price {
+  display: block;
+  font-weight: bold;
+  color: #f77a8c;
+}
