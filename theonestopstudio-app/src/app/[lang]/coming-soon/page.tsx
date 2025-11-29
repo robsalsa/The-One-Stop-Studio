@@ -1,5 +1,11 @@
 import { client } from '@/lib/sanity';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Coming Soon - The One Stop Studio",
+  description: "Announcements and upcoming features at The One Stop Studio",
+};
 
 interface ComingSoonData {
   description: string;
