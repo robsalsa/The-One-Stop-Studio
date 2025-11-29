@@ -23,18 +23,30 @@ function AnalyticsPageViewInner() {
       const langMatch = pathname?.match(/^\/(en|es|ko)/);
       const language = langMatch ? langMatch[1] : "en";
       
-      // Extract page type
+      // Extract page type and title
       let pageType = "home";
-      if (pathname?.includes("/service")) pageType = "service";
-      else if (pathname?.includes("/about")) pageType = "about";
-      else if (pathname?.includes("/booking")) pageType = "booking";
-      else if (pathname?.includes("/coming-soon")) pageType = "coming-soon";
+      let pageTitle = "Home - The One Stop Studio";
+      
+      if (pathname?.includes("/service")) {
+        pageType = "service";
+        pageTitle = "Services - The One Stop Studio";
+      } else if (pathname?.includes("/about")) {
+        pageType = "about";
+        pageTitle = "About Us - The One Stop Studio";
+      } else if (pathname?.includes("/booking")) {
+        pageType = "booking";
+        pageTitle = "Book Appointment - The One Stop Studio";
+      } else if (pathname?.includes("/coming-soon")) {
+        pageType = "coming-soon";
+        pageTitle = "Coming Soon - The One Stop Studio";
+      }
 
       const url = pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : "");
 
       // Send page view with custom parameters
       window.gtag("event", "page_view", {
         page_path: url,
+        page_title: pageTitle,
         page_language: language,
         page_type: pageType,
       });
