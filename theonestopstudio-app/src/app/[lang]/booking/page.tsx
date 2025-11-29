@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import translations from '@/../public/localization/translationBookingPage.json';
 import CalendlyWidget from '@/components/CalendlyWidget';
@@ -21,6 +21,11 @@ export default function BookingPage() {
     : pathname?.startsWith("/ko")
     ? "ko"
     : "en";
+
+  // Set page title dynamically
+  useEffect(() => {
+    document.title = "Book Appointment - The One Stop Studio";
+  }, []);
 
   // Get translations for current language
   const t: Translations = translations[lang as keyof typeof translations] || translations.en;

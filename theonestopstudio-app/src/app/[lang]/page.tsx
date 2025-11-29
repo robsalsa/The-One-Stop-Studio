@@ -39,6 +39,11 @@ export default function HomePage() {
     ? "ko"
     : "en";
 
+  // Set page title dynamically
+  useEffect(() => {
+    document.title = "Home - The One Stop Studio";
+  }, []);
+
   // Get translations for current language, fallback to 'en'
   const t: Translations = translations[lang as keyof typeof translations] || translations.en;
 

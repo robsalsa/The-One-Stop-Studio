@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import translations from '@/../public/localization/translationServicePage.json';
 
@@ -34,6 +34,11 @@ export default function ServicesPage() {
     : pathname?.startsWith("/ko")
     ? "ko"
     : "en";
+
+  // Set page title dynamically
+  useEffect(() => {
+    document.title = "Services - The One Stop Studio";
+  }, []);
 
   // Get translations for current language
   const t: Translations = translations[lang as keyof typeof translations] || translations.en;
