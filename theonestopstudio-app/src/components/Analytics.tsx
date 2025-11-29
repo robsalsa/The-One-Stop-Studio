@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname, useSearchParams } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, Suspense } from "react";
 
 declare global {
   interface Window {
@@ -13,7 +13,7 @@ declare global {
   }
 }
 
-export default function AnalyticsPageView() {
+function AnalyticsPageViewInner() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -42,4 +42,12 @@ export default function AnalyticsPageView() {
   }, [pathname, searchParams]);
 
   return null;
+}
+
+export default function AnalyticsPageView() {
+  return (
+    <Suspense fallback={null}>
+      <AnalyticsPageViewInner />
+    </Suspense>
+  );
 }
