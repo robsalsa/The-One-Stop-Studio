@@ -88,7 +88,7 @@ export default function HomePage() {
         `}
       </Script>
 
-      <Header />
+      {/* <Header /> */}
 
       <main>
         {/* Slideshow */}
@@ -189,7 +189,7 @@ export default function HomePage() {
         </section>
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
