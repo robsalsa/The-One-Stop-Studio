@@ -37,7 +37,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h7>{labels[lang].title}</h7>
+          <h3>{labels[lang].title}</h3>
           <p>
             {lang === "ko" ? "당신을 ": lang === "es" ? "Haciéndote " : "Making you "}
             <span className="buzzword-wrapper">
@@ -56,7 +56,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-section">
-          <h7>{labels[lang].location}</h7>
+          <h3>{labels[lang].location}</h3>
           <address>2922 S Western Ave, Los Angeles, CA 90018</address>
           <div className="map-container">
             <iframe

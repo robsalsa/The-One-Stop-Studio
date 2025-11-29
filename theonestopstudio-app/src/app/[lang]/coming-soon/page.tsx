@@ -67,7 +67,6 @@ export default async function ComingSoonPage({ params }: { params: Promise<{ lan
             ? "개발자에게 이메일 보내기"
             : "Email the Developer"}
         </a>
-        : roberts8443@gmail.com
       </p>
     </div>
   );

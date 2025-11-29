@@ -27,7 +27,7 @@ export default function Header() {
     {code: "en", label: "English"},
     {code: "es", label: "Español"},
     {code: "ko", label: "한국인"},
-  ]
+  ];
 
   const [burgerActive, setBurgerActive] = useState(false);
   const [langMenuActive, setLangMenuActive] = useState(false);
@@ -61,9 +61,9 @@ export default function Header() {
         </Link>
 
         <Link  href={lang === "es" ? "/es" : lang === "ko" ? "/ko" : "/en"}>
-          <h20>
+          <h2>
             The One Stop Studio
-          </h20>
+          </h2>
         
         </Link>
 
