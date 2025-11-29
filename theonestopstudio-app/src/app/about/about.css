@@ -1,0 +1,49 @@
+:root {
+  /* --primary-color: #FFFFFF;  White */
+  --secondary-color: #1a1a1a;
+  --accent-color: #ffb9b9;
+  --text-color: #333333;
+  --bg-light: #f8e5e8;
+  --primary-color-One: #E50914;
+  --primary-color-Two: #0099FF;
+  --secondary-color-One: black;
+  --secondary-color-Two: white;
+  --secondary-color-Three: #c7a37a;
+  --accent-color-One: grey;
+  --accent-color-Two: #66CCFF;
+  --accent-color-Three: #FF4D6A;
+  --text-color-One: black;
+  --text-color-Two: white;
+  --text-shadow: #1A1A1A;
+  --background-card-color-One: #660000;
+  --background-card-color-Two: #0033CC;
+}
+
+.about-us { display:flex; align-items:center; justify-content:center; min-height:100vh; width:100%; background:var(--secondary-color-Two); }
+.pic { height:auto; width:100%; max-width:400px; border-radius:30px; margin-top:30px; }
+.about { width:100%; max-width:1130px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-around; gap:20px; }
+.text { width:100%; max-width:540px; text-align:center; margin-top:-40px; margin-bottom:100px; }
+.text h5 { color:var(--secondary-color-One); font-size:25px; font-weight:500; margin-bottom:15px; }
+.text span { color:var(--accent-color-Three); font-size:2.5rem; font-weight:500; }
+.text p { color:#333; font-size:16px; line-height:24px; letter-spacing:0.5px; }
+.blizzard-wrapper { display:inline-block; height:1.2em; line-height:1.2em; overflow:hidden; vertical-align:bottom; }
+.blizzard { display:inline-block; color:var(--accent-color-Three); font-weight:600; transform:translateY(0); }
+@keyframes roll-out { from { transform:translateY(0); opacity:1;} to { transform:translateY(-100%); opacity:0;} }
+@keyframes roll-in { from { transform:translateY(100%); opacity:0;} to { transform:translateY(0); opacity:1;} }
+
+/* Responsive breakpoints */
+@media (max-width:768px){ 
+  .about { padding: 20px; }
+  .pic { max-width: 350px; margin-top: 20px; }
+  .text { margin-top: 20px; }
+  .text h5 { font-size: 2rem; }
+  .text p { font-size: 15px; line-height: 22px; }
+}
+
+@media (max-width:480px){ 
+  .pic { max-width: 280px; }
+  .text { padding: 0 15px; }
+  .text h5 { font-size: 1.5rem; }
+  .text span { font-size: 1.8rem; }
+  .text p { font-size: 14px; line-height: 20px; }
+}
