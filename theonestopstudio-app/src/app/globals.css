@@ -70,7 +70,7 @@ body {
 .header h20 {
     font-size: 1.6rem;
     font-weight: 700;
-    color: var(--text-color);
+    color: black;
     text-decoration: none;
     text-shadow: 1px 1px 2px var(--bg-light);
 }
@@ -599,6 +599,7 @@ button4:active .button_top {
 
 .header h20{
   color: black;
+  font-size: 1.6rem;
 }
 
 /* About Page Styles */
