@@ -1,41 +1,125 @@
 "use client";
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Header() {
   const pathname = usePathname();
-  const isSpanish = pathname?.startsWith("/es");
+  const router = useRouter();
+
+  // Detect language
+  const lang = pathname?.startsWith("/es")
+    ? "es"
+    : pathname?.startsWith("/ko")
+    ? "ko"
+    : "en";
+
+  // Language map
+  const labels = {
+    en: { services: "All Services", about: "About Us", book: "Book", switch: "Languages" },
+    es: { services: "Servicios", about: "Sobre Nosotros", book: "Reservar", switch: "Idiomas" },
+    ko: { services: "모든 서비스", about: "회사 소개", book: "예약하기", switch: "언어" },
+  };
+
+  const availableLanguages = [
+    {code: "en", label: "English"},
+    {code: "es", label: "Español"},
+    {code: "ko", label: "한국인"},
+  ]
+
+  const [burgerActive, setBurgerActive] = useState(false);
+  const [langMenuActive, setLangMenuActive] = useState(false);
+
+  useEffect(() => {
+    setBurgerActive(false);
+    setLangMenuActive(false);
+  }, [pathname]);
+
+  const handleLanguageChange = (code: string) =>{
+    let basePath ="/";
+    if (code != "en") basePath = `/${code}`;
+  
+
+    const pathParts = pathname.split("/").slice(2);
+    const newPath = pathParts.length > 0 ? `${basePath}/${pathParts.join("/")}`: basePath;
+    
+    router.push(newPath);
+  };
 
   return (
-    <header className="sticky top-0 z-40 border-b border-black/10 bg-white/80 backdrop-blur dark:border-white/10 dark:bg-black/60">
-      <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
-        <Link href={isSpanish ? "/es" : "/"} className="flex items-center gap-3">
+    <header className="header">
+      <div className="container">
+        <Link href={lang === "es" ? "/es" : lang === "ko" ? "/ko" : "/"} className="flex items-center gap-3">
           <Image
             src="/Assets/The One Stop Studio.jpg"
             alt="The One Stop Studio"
-            width={40}
-            height={40}
-            className="rounded"
+            width={55}
+            height={50}
             priority
           />
-          <span className="text-base font-semibold">The One Stop Studio</span>
         </Link>
 
-        <nav className="flex items-center gap-4 text-sm">
-          <Link href={isSpanish ? "/es/services" : "/services"} className="hover:underline">
-            {isSpanish ? "Servicios" : "All Services"}
-          </Link>
-          <Link href={isSpanish ? "/es/about" : "/about"} className="hover:underline">
-            {isSpanish ? "Sobre Nosotros" : "About Us"}
-          </Link>
-          <Link href={isSpanish ? "/es/coming-soon" : "/coming-soon"} className="hover:underline">
-            {isSpanish ? "Reservar" : "Book"}
-          </Link>
-          <Link href={isSpanish ? "/" : "/es"} className="rounded-full border px-3 py-1 hover:bg-black/5 dark:hover:bg-white/10">
-            {isSpanish ? "English" : "Español"}
-          </Link>
+        <Link  href={lang === "es" ? "/es" : lang === "ko" ? "/ko" : "/"}>
+          <h20>
+            The One Stop Studio
+          </h20>
+        
+        </Link>
+
+        <nav className="navbar">
+          <ul className={`burger-menu ${burgerActive ? "active" : ""}`}>
+            <li className="burger-item">
+              <Link href={lang === "es" ? "/es/services" : lang === "ko" ? "/ko/services" : "/services"}>
+                {labels[lang].services}
+              </Link>
+            </li>
+            <li className="burger-item">
+              <Link href={lang === "es" ? "/es/about" : lang === "ko" ? "/ko/about" : "/about"}>
+                {labels[lang].about}
+              </Link>
+            </li>
+            <li className="burger-item">
+              <Link href={lang === "es" ? "/es/coming-soon" : lang === "ko" ? "/ko/coming-soon" : "/coming-soon"}>
+                {labels[lang].book}
+              </Link>
+            </li>
+
+            {/* Dynamic Language Switcher */}
+            <li className="burger-item">
+              <span
+                className="cursor-pointer hover:underline"
+                onClick={() => setLangMenuActive((prev) => !prev)}
+              >
+                {labels[lang].switch}
+              </span>
+              {langMenuActive && (
+                <ul className="submenu">
+                  {availableLanguages.map((l) => (
+                    <li key={l.code} className="burger-item">
+                      <span
+                        className="cursor-pointer hover:underline"
+                        onClick={() => handleLanguageChange(l.code)}
+                      >
+                        {l.label}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          </ul>
         </nav>
+
+        <div
+          className={`burger ${burgerActive ? "active" : ""}`}
+          onClick={() => setBurgerActive((prev) => !prev)}
+        >
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
       </div>
     </header>
   );

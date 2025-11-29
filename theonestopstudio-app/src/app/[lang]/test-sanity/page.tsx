@@ -76,17 +76,16 @@ export default async function TestSanityPage({
 
         <div className="mb-6 rounded-lg bg-blue-50 p-4 dark:bg-blue-900/20">
           <p className="text-sm text-blue-800 dark:text-blue-200">
-            <strong>Current Language:</strong> {languageName} ({currentLang})
+            <strong>Current Language:</strong>  ({currentLang})
           </p>
-          <p className="mt-2 text-xs text-blue-600 dark:text-blue-300">
-            💡 Tip: Create a Sample Page in Sanity Studio, then use the "Translations" 
-            button to create a Spanish version!
-          </p>
+          {/* <p className="mt-2 text-xs text-blue-600 dark:text-blue-300">
+            💡 Lol hi daniel
+          </p> */}
         </div>
 
-        <h2 className="mb-4 text-2xl font-semibold dark:text-white">
+        {/* <h2 className="mb-4 text-2xl font-semibold dark:text-white">
           Sample Pages ({languageName})
-        </h2>
+        </h2> */}
 
         {samplePages.length === 0 ? (
           <div className="rounded-lg border border-yellow-300 bg-yellow-50 p-4 dark:bg-yellow-900/20">
@@ -105,9 +104,9 @@ export default async function TestSanityPage({
                   <h3 className="text-xl font-semibold dark:text-white">
                     {page.title || "Untitled"}
                   </h3>
-                  <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium dark:bg-gray-800">
+                  {/* <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium dark:bg-gray-800">
                     {page.language === 'en' ? '🇺🇸 EN' : '🇪🇸 ES'}
-                  </span>
+                  </span> */}
                 </div>
                 
                 {page.description && (

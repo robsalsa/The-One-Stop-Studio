@@ -1,7 +1,4 @@
-import blockContent from './blockContent'
-import category from './category'
-import post from './post'
-import author from './author'
 import samplePage from './samplePage'
+import servicePage from './servicePage'
 
-export const schemaTypes = [post, author, category, blockContent, samplePage]
+export const schemaTypes = [samplePage, servicePage]

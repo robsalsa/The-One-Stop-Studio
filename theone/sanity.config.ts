@@ -18,8 +18,9 @@ export default defineConfig({
       supportedLanguages: [
         {id: 'en', title: 'English'},
         {id: 'es', title: 'Spanish'},
+        {id: 'ko', title:'Korean'},
       ],
-      schemaTypes: ['samplePage'],
+      schemaTypes: ['samplePage', 'servicePage'],
     }),
   ],
 
