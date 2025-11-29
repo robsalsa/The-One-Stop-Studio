@@ -3,6 +3,13 @@
 import React, { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import translations from '@/../public/localization/translationServicePage.json';
+import {Metadata} from 'next';
+
+export const metadata: Metadata = {
+  title: "Service Page - The One Stop Studio",
+  description: "All Services and Filters for said services"
+}
+
 
 type Service = {
   name: string;
