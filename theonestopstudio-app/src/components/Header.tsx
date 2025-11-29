@@ -1,70 +1,129 @@
 "use client";
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
-import { useState, useCallback } from "react";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Header() {
   const pathname = usePathname();
-  const isSpanish = pathname?.startsWith("/es");
-  const [menuOpen, setMenuOpen] = useState(false);
+  const router = useRouter();
 
-  const toggleMenu = useCallback(() => {
-    setMenuOpen((prev) => !prev);
-  }, []);
+  // Detect language
+  const lang = pathname?.startsWith("/es")
+    ? "es"
+    : pathname?.startsWith("/ko")
+    ? "ko"
+    : "en";
 
-  // Close menu when navigating (basic heuristic: pathname change)
-  // Could be enhanced with a useEffect listening to pathname.
+  // Language map
+  const labels = {
+    en: { services: "All Services", about: "About Us", book: "Book", switch: "Languages" },
+    es: { services: "Servicios", about: "Sobre Nosotros", book: "Reservar", switch: "Idiomas" },
+    ko: { services: "모든 서비스", about: "회사 소개", book: "예약하기", switch: "언어" },
+  };
+
+  const availableLanguages = [
+    {code: "en", label: "English"},
+    {code: "es", label: "Español"},
+    {code: "ko", label: "한국인"},
+  ];
+
+  const [burgerActive, setBurgerActive] = useState(false);
+  const [langMenuActive, setLangMenuActive] = useState(false);
+
+  useEffect(() => {
+    setBurgerActive(false);
+    setLangMenuActive(false);
+  }, [pathname]);
+
+  const handleLanguageChange = (code: string) => {
+    // Remove the current language prefix from the path
+    const pathWithoutLang = pathname.replace(/^\/(en|es|ko)/, '') || '/';
+    
+    // Construct new path with selected language (all languages use prefix)
+    const newPath = `/${code}${pathWithoutLang === '/' ? '' : pathWithoutLang}`;
+    
+    router.push(newPath);
+  };
 
   return (
     <header className="header">
       <div className="container">
-        <Link href={isSpanish ? "/es" : "/"} className="logo-link" aria-label="Home">
+        <Link href={lang === "es" ? "/es" : lang === "ko" ? "/ko" : "/en"} className="flex items-center gap-3">
           <Image
             src="/Assets/The One Stop Studio.jpg"
             alt="The One Stop Studio"
-            width={50}
+            width={55}
             height={50}
             priority
           />
         </Link>
-        <h2 className="site-title">The One Stop Studio</h2>
-        <nav className="navbar" aria-label="Main navigation">
-          <ul className={`burger-menu ${menuOpen ? "active" : ""}`}>
+
+        <Link  href={lang === "es" ? "/es" : lang === "ko" ? "/ko" : "/en"}>
+          <h2>
+            The One Stop Studio
+          </h2>
+        
+        </Link>
+
+        <nav className="navbar">
+          <ul className={`burger-menu ${burgerActive ? "active" : ""}`}>
             <li className="burger-item">
-              <Link href={isSpanish ? "/es/services" : "/services"} onClick={() => setMenuOpen(false)}>
-                {isSpanish ? "Servicios" : "All Services"}
+              <Link href={lang === "es" ? "/es/service" : lang === "ko" ? "/ko/service" : "/en/service"}>   {/** HERE IS WHERE ALL THE LINKS ARE LOCATED!!!!!!/ */}
+                {labels[lang].services}
               </Link>
             </li>
             <li className="burger-item">
-              <Link href={isSpanish ? "/es/about" : "/about"} onClick={() => setMenuOpen(false)}>
-                {isSpanish ? "Sobre Nosotros" : "About Us"}
+              <Link href={lang === "es" ? "/es/about" : lang === "ko" ? "/ko/about" : "/en/about"}>
+                {labels[lang].about}
               </Link>
             </li>
             <li className="burger-item">
-              <Link href={isSpanish ? "/es/booking" : "/booking"} onClick={() => setMenuOpen(false)}>
-                {isSpanish ? "Reservar" : "Book an Appointment"}
+              <Link href={lang === "es" ? "/es/booking" : lang === "ko" ? "/ko/booking" : "/en/booking"}>
+                {labels[lang].book}
               </Link>
             </li>
-            <li className="burger-item">
-              <Link href={isSpanish ? "/" : "/es"} onClick={() => setMenuOpen(false)}>
-                {isSpanish ? "English" : "En Español"}
+            {/* <li className="burger-item">
+              <Link href={lang === "es" ? "/es/coming-soon" : lang === "ko" ? "/ko/coming-soon" : "/en/coming-soon"}>
+                {labels[lang].book}
               </Link>
+            </li> */}       {/* THIS IS FOR THE COMING SOON PAGE PLEASE DO NOT CHANGE UNTIL A REAL ANNOUNCEMENT IT MADE */}
+
+            {/* Dynamic Language Switcher */}
+            <li className="burger-item">
+              <span
+                className="cursor-pointer hover:underline"
+                onClick={() => setLangMenuActive((prev) => !prev)}
+              >
+                {labels[lang].switch}
+              </span>
+              {langMenuActive && (
+                <ul className="submenu">
+                  {availableLanguages.map((l) => (
+                    <li key={l.code} className="burger-item">
+                      <span
+                        className="cursor-pointer hover:underline"
+                        onClick={() => handleLanguageChange(l.code)}
+                      >
+                        {l.label}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
           </ul>
         </nav>
-        <button
-          type="button"
-          className={`burger ${menuOpen ? "active" : ""}`}
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
-          aria-expanded={menuOpen}
-          aria-controls="main-menu"
-          onClick={toggleMenu}
+
+        <div
+          className={`burger ${burgerActive ? "active" : ""}`}
+          onClick={() => setBurgerActive((prev) => !prev)}
         >
-          <span className="bar" />
-          <span className="bar" />
-          <span className="bar" />
-        </button>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
       </div>
     </header>
   );

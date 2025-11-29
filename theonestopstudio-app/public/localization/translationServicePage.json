@@ -1,0 +1,275 @@
+{
+  "en": {
+    "pageTitle": "Our Services",
+    "filterAll": "Show All",
+    "filterBarber": "Barber",
+    "filterBeauty": "Beauty",
+    "filterOther": "Other",
+    "filterPermanent": "Permanent Cosmetics",
+    "filterPiercing": "Piercings",
+    "servicesData": [
+      {
+        "category": "Barber Services",
+        "services": [
+          { "name": "Haircut (Fades/Tapers)", "price": "$50" },
+          { "name": "Haircut & Eyebrows", "price": "$60" },
+          { "name": "Haircut with Hot towel massage", "price": "$60" },
+          { "name": "Haircut with facial", "price": "$65" },
+          { "name": "Haircut with facial & hot towel massage", "price": "$75" },
+          { "name": "Combo A (Haircut & Hot towel Massage & Facial & Eyebrows) — NO BEARD INCLUDED", "price": "$80" },
+          { "name": "Haircut & Beard", "price": "$70" },
+          { "name": "Haircut & Beard & Hot Towel Massage", "price": "$80" },
+          { "name": "Haircut & Beard & Eyebrows", "price": "$80" },
+          { "name": "Haircut & Beard & Facial", "price": "$85" },
+          { "name": "Combo B (Haircut & Beard & Hot towel Massage & Facial & Eyebrows)", "price": "$100" },
+          { "name": "Haircut & Braids", "price": "$90+ (prices vary on braid style)" },
+          { "name": "Beard Only", "price": "$30" },
+          { "name": "Mustache", "price": "$20" },
+          { "name": "Line Up (Razor around the perimeter of Hair)", "price": "$30" },
+          { "name": "Shape Up (Razor around the perimeter of Hair and Beard)", "price": "$40" },
+          { "name": "Haircut Design", "price": "+$10 (may vary on design)" }
+        ]
+      },
+      {
+        "category": "Beauty Services",
+        "services": [
+          { "name": "Haircuts are done using scissors ONLY!", "price": "" },
+          { "name": "Haircut (Straight Across) — NO LAYERS", "price": "$50" },
+          { "name": "Haircut Straight Across with Wash & Style", "price": "$65+" },
+          { "name": "Haircut With Layers", "price": "$65" },
+          { "name": "Haircut With Layers & Wash & Style", "price": "$80+" },
+          { "name": "Haircut & Eyebrows", "price": "$60" },
+          { "name": "Haircut & 2 Braids", "price": "$90" },
+          { "name": "2 Braids Only", "price": "$40" },
+          { "name": "Half Head Braids", "price": "$65+" },
+          { "name": "Full Head Braids", "price": "$80+" },
+          { "name": "Box Braids", "price": "$200+" },
+          { "name": "ALL BRAIDS WITH ADDED HAIR IS EXTRA", "price": "" },
+          { "name": "Wash & Style (price may vary on length)", "price": "Varies" },
+          { "name": "Wash & Condition (Light Dry)", "price": "$25" },
+          { "name": "Flat Iron / Curls Only", "price": "$25+" },
+          { "name": "Undercuts", "price": "$30" },
+          { "name": "Full Color", "price": "$80" },
+          { "name": "Full Color & Style", "price": "$95+" },
+          { "name": "Retouch (1in Growth) — Starting at", "price": "$50" },
+          { "name": "Retouch & Style", "price": "$65+" },
+          { "name": "Bleach & Toner", "price": "$80+" },
+          { "name": "Lightening", "price": "$150+" },
+          { "name": "Lowlights", "price": "$150+" },
+          { "name": "Highlights", "price": "$200+" }
+        ]
+      },
+      {
+        "category": "Other/Add-On Services",
+        "services": [
+          { "name": "Eyebrow Threading / Waxed", "price": "$20" },
+          { "name": "Eyebrows & Lip", "price": "$27" },
+          { "name": "Full Face (NOT INCLUDING EYEBROWS)", "price": "$25" },
+          { "name": "Full Face & Brows", "price": "$45" },
+          { "name": "Lash Lift", "price": "$50" },
+          { "name": "Lash Lift & Tint", "price": "$60" },
+          { "name": "Lash Lift Touch Up", "price": "$35" },
+          { "name": "Eyebrow Lamination", "price": "$65" },
+          { "name": "Eyebrow Lamination & Tint", "price": "$75" }
+        ]
+      },
+      {
+        "category": "Permanent Cosmetic Services",
+        "services": [
+          { "name": "Microblading", "price": "$400" },
+          { "name": "Tattoo Shading", "price": "$350" },
+          { "name": "2-4 Week Touch Up", "price": "$200" }
+        ]
+      },
+      {
+        "category": "Piercing Services",
+        "services": [
+          { "name": "Nose Piercing", "price": "$25" },
+          { "name": "Ear Lobe Piercing", "price": "$55" }
+        ]
+      }
+    ]
+  },
+  "es": {
+    "pageTitle": "Nuestros Servicios",
+    "filterAll": "Mostrar Todos",
+    "filterBarber": "Barbería",
+    "filterBeauty": "Belleza",
+    "filterOther": "Otros",
+    "filterPermanent": "Cosméticos Permanentes",
+    "filterPiercing": "Perforaciones",
+    "servicesData": [
+      {
+        "category": "Servicios de Barbería",
+        "services": [
+          { "name": "Corte de Cabello (Fades/Tapers)", "price": "$50" },
+          { "name": "Corte de Cabello y Cejas", "price": "$60" },
+          { "name": "Corte de Cabello con Masaje de Toalla Caliente", "price": "$60" },
+          { "name": "Corte de Cabello con Facial", "price": "$65" },
+          { "name": "Corte de Cabello con Facial y Masaje de Toalla Caliente", "price": "$75" },
+          { "name": "Combo A (Corte de Cabello & Masaje de Toalla Caliente & Facial & Cejas) — SIN BARBA", "price": "$80" },
+          { "name": "Corte de Cabello y Barba", "price": "$70" },
+          { "name": "Corte de Cabello y Barba & Masaje de Toalla Caliente", "price": "$80" },
+          { "name": "Corte de Cabello y Barba y Cejas", "price": "$80" },
+          { "name": "Corte de Cabello y Barba y Facial", "price": "$85" },
+          { "name": "Combo B (Corte de Cabello & Barba & Masaje de Toalla Caliente & Facial & Cejas)", "price": "$100" },
+          { "name": "Corte de Cabello y Trenzas", "price": "$90+ (los precios varían según el estilo de trenza)" },
+          { "name": "Solo Barba", "price": "$30" },
+          { "name": "Bigote", "price": "$20" },
+          { "name": "Line Up (Navaja alrededor del perímetro del cabello)", "price": "$30" },
+          { "name": "Shape Up (Navaja alrededor del perímetro del cabello y barba)", "price": "$40" },
+          { "name": "Diseño de Corte de Cabello", "price": "+$10 (puede variar según el diseño)" }
+        ]
+      },
+      {
+        "category": "Servicios de Belleza",
+        "services": [
+          { "name": "¡Los cortes de cabello se hacen usando SOLO tijeras!", "price": "" },
+          { "name": "Corte de Cabello (Recto) — SIN CAPAS", "price": "$50" },
+          { "name": "Corte de Cabello Recto con Lavado y Estilo", "price": "$65+" },
+          { "name": "Corte de Cabello con Capas", "price": "$65" },
+          { "name": "Corte de Cabello con Capas & Lavado & Estilo", "price": "$80+" },
+          { "name": "Corte de Cabello y Cejas", "price": "$60" },
+          { "name": "Corte de Cabello y 2 Trenzas", "price": "$90" },
+          { "name": "Solo 2 Trenzas", "price": "$40" },
+          { "name": "Media Cabeza de Trenzas", "price": "$65+" },
+          { "name": "Cabeza Completa de Trenzas", "price": "$80+" },
+          { "name": "Trenzas de Caja", "price": "$200+" },
+          { "name": "TODAS LAS TRENZAS CON CABELLO AGREGADO ES EXTRA", "price": "" },
+          { "name": "Lavado y Estilo (el precio puede variar según la longitud)", "price": "Varía" },
+          { "name": "Lavado y Acondicionamiento (Secado Ligero)", "price": "$25" },
+          { "name": "Plancha / Solo Rizos", "price": "$25+" },
+          { "name": "Undercuts", "price": "$30" },
+          { "name": "Color Completo", "price": "$80" },
+          { "name": "Color Completo y Estilo", "price": "$95+" },
+          { "name": "Retoque (Crecimiento de 1 pulgada) — Comenzando en", "price": "$50" },
+          { "name": "Retoque y Estilo", "price": "$65+" },
+          { "name": "Decoloración y Tóner", "price": "$80+" },
+          { "name": "Aclaramiento", "price": "$150+" },
+          { "name": "Lowlights", "price": "$150+" },
+          { "name": "Highlights", "price": "$200+" }
+        ]
+      },
+      {
+        "category": "Otros/Servicios Adicionales",
+        "services": [
+          { "name": "Depilación de Cejas con Hilo / Cera", "price": "$20" },
+          { "name": "Cejas y Labio", "price": "$27" },
+          { "name": "Cara Completa (SIN INCLUIR CEJAS)", "price": "$25" },
+          { "name": "Cara Completa y Cejas", "price": "$45" },
+          { "name": "Lifting de Pestañas", "price": "$50" },
+          { "name": "Lifting de Pestañas y Tinte", "price": "$60" },
+          { "name": "Retoque de Lifting de Pestañas", "price": "$35" },
+          { "name": "Laminación de Cejas", "price": "$65" },
+          { "name": "Laminación de Cejas y Tinte", "price": "$75" }
+        ]
+      },
+      {
+        "category": "Servicios de Cosméticos Permanentes",
+        "services": [
+          { "name": "Microblading", "price": "$400" },
+          { "name": "Sombreado de Tatuaje", "price": "$350" },
+          { "name": "Retoque de 2-4 Semanas", "price": "$200" }
+        ]
+      },
+      {
+        "category": "Servicios de Perforación",
+        "services": [
+          { "name": "Perforación de Nariz", "price": "$25" },
+          { "name": "Perforación de Lóbulo de Oreja", "price": "$55" }
+        ]
+      }
+    ]
+  },
+  "ko": {
+    "pageTitle": "우리의 서비스",
+    "filterAll": "모두 보기",
+    "filterBarber": "이발",
+    "filterBeauty": "뷰티",
+    "filterOther": "기타",
+    "filterPermanent": "영구 화장",
+    "filterPiercing": "피어싱",
+    "servicesData": [
+      {
+        "category": "이발 서비스",
+        "services": [
+          { "name": "헤어컷 (페이드/테이퍼)", "price": "$50" },
+          { "name": "헤어컷 & 눈썹", "price": "$60" },
+          { "name": "뜨거운 타월 마사지가 포함된 헤어컷", "price": "$60" },
+          { "name": "페이셜이 포함된 헤어컷", "price": "$65" },
+          { "name": "페이셜 & 뜨거운 타월 마사지가 포함된 헤어컷", "price": "$75" },
+          { "name": "콤보 A (헤어컷 & 뜨거운 타월 마사지 & 페이셜 & 눈썹) — 수염 불포함", "price": "$80" },
+          { "name": "헤어컷 & 수염", "price": "$70" },
+          { "name": "헤어컷 & 수염 & 뜨거운 타월 마사지", "price": "$80" },
+          { "name": "헤어컷 & 수염 & 눈썹", "price": "$80" },
+          { "name": "헤어컷 & 수염 & 페이셜", "price": "$85" },
+          { "name": "콤보 B (헤어컷 & 수염 & 뜨거운 타월 마사지 & 페이셜 & 눈썹)", "price": "$100" },
+          { "name": "헤어컷 & 땋기", "price": "$90+ (땋기 스타일에 따라 가격이 다름)" },
+          { "name": "수염만", "price": "$30" },
+          { "name": "콧수염", "price": "$20" },
+          { "name": "라인업 (머리 둘레에 면도기)", "price": "$30" },
+          { "name": "쉐이프업 (머리와 수염 둘레에 면도기)", "price": "$40" },
+          { "name": "헤어컷 디자인", "price": "+$10 (디자인에 따라 다를 수 있음)" }
+        ]
+      },
+      {
+        "category": "뷰티 서비스",
+        "services": [
+          { "name": "헤어컷은 가위만 사용합니다!", "price": "" },
+          { "name": "헤어컷 (일자) — 레이어 없음", "price": "$50" },
+          { "name": "일자 헤어컷 with 워시 & 스타일", "price": "$65+" },
+          { "name": "레이어가 있는 헤어컷", "price": "$65" },
+          { "name": "레이어가 있는 헤어컷 & 워시 & 스타일", "price": "$80+" },
+          { "name": "헤어컷 & 눈썹", "price": "$60" },
+          { "name": "헤어컷 & 2개의 땋기", "price": "$90" },
+          { "name": "2개의 땋기만", "price": "$40" },
+          { "name": "반머리 땋기", "price": "$65+" },
+          { "name": "전체 머리 땋기", "price": "$80+" },
+          { "name": "박스 브레이드", "price": "$200+" },
+          { "name": "모든 땋기에 추가된 머리카락은 추가 비용", "price": "" },
+          { "name": "워시 & 스타일 (길이에 따라 가격이 다를 수 있음)", "price": "다양함" },
+          { "name": "워시 & 컨디션 (가벼운 드라이)", "price": "$25" },
+          { "name": "플랫 아이언 / 컬만", "price": "$25+" },
+          { "name": "언더컷", "price": "$30" },
+          { "name": "풀 컬러", "price": "$80" },
+          { "name": "풀 컬러 & 스타일", "price": "$95+" },
+          { "name": "리터치 (1인치 성장) — 시작 가격", "price": "$50" },
+          { "name": "리터치 & 스타일", "price": "$65+" },
+          { "name": "블리치 & 토너", "price": "$80+" },
+          { "name": "라이트닝", "price": "$150+" },
+          { "name": "로우라이트", "price": "$150+" },
+          { "name": "하이라이트", "price": "$200+" }
+        ]
+      },
+      {
+        "category": "기타/추가 서비스",
+        "services": [
+          { "name": "눈썹 실 / 왁싱", "price": "$20" },
+          { "name": "눈썹 & 입술", "price": "$27" },
+          { "name": "풀 페이스 (눈썹 불포함)", "price": "$25" },
+          { "name": "풀 페이스 & 눈썹", "price": "$45" },
+          { "name": "래쉬 리프트", "price": "$50" },
+          { "name": "래쉬 리프트 & 틴트", "price": "$60" },
+          { "name": "래쉬 리프트 터치업", "price": "$35" },
+          { "name": "눈썹 라미네이션", "price": "$65" },
+          { "name": "눈썹 라미네이션 & 틴트", "price": "$75" }
+        ]
+      },
+      {
+        "category": "영구 화장 서비스",
+        "services": [
+          { "name": "마이크로블레이딩", "price": "$400" },
+          { "name": "타투 쉐이딩", "price": "$350" },
+          { "name": "2-4주 터치업", "price": "$200" }
+        ]
+      },
+      {
+        "category": "피어싱 서비스",
+        "services": [
+          { "name": "코 피어싱", "price": "$25" },
+          { "name": "귓볼 피어싱", "price": "$55" }
+        ]
+      }
+    ]
+  }
+}
