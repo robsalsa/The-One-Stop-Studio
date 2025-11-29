@@ -79,16 +79,16 @@ export default function Header() {
                 {labels[lang].about}
               </Link>
             </li>
-            <li className="burger-item">
+            {/* <li className="burger-item">
               <Link href={lang === "es" ? "/es/booking" : lang === "ko" ? "/ko/booking" : "/en/booking"}>
                 {labels[lang].book}
               </Link>
-            </li>
-            {/* <li className="burger-item">
+            </li> */}
+            <li className="burger-item">
               <Link href={lang === "es" ? "/es/coming-soon" : lang === "ko" ? "/ko/coming-soon" : "/en/coming-soon"}>
                 {labels[lang].book}
               </Link>
-            </li> */}       {/* THIS IS FOR THE COMING SOON PAGE PLEASE DO NOT CHANGE UNTIL A REAL ANNOUNCEMENT IT MADE */}
+            </li>       {/* THIS IS FOR THE COMING SOON PAGE PLEASE DO NOT CHANGE UNTIL A REAL ANNOUNCEMENT IT MADE */}
 
             {/* Dynamic Language Switcher */}
             <li className="burger-item">
