@@ -125,7 +125,7 @@ export default function HomePage() {
         {/* Buttons */}
         <div style={{ textAlign: "center" }}>
           <button className="button-54">
-            <a href={`/${lang}/services`}>{t.servicesBtn}</a>
+            <a href={`/${lang}/service`}>{t.servicesBtn}</a>
           </button>
         </div>
 
