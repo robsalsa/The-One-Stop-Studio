@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
+import AnalyticsPageView from "@/components/Analytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,6 +44,7 @@ export default function RootLayout({
             gtag('config', 'G-PX3980M4N7');
           `}
         </Script>
+        <AnalyticsPageView />
         <Header />
         {children}
         <Footer />
