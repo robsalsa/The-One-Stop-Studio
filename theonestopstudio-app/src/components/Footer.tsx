@@ -19,6 +19,7 @@ export default function Footer() {
   };
 
   const buzzwords = ["beautiful", "magnificent", "spectacular", "ravishing", "stunning", "charming"];
+  const buzzwordsEs = ["hermosa/hermoso", "magnífica/magnífico", "espectacular", "deslumbrante", "impresionante", "encantadora/encantador"];
   const buzzwordsKo = ["아름다운", "웅장한", "장관의", "눈부신", "매력적인", "멋진"];
   const [buzzIndex, setBuzzIndex] = useState(0);
 
@@ -27,9 +28,10 @@ export default function Footer() {
       setBuzzIndex((prev) => (prev + 1) % buzzwords.length);
     }, 3000);
     return () => clearInterval(interval);
-  }, []);
+  }, [buzzwords.length]);
 
-  const currentBuzz = lang === "ko" ? buzzwordsKo[buzzIndex] : buzzwords[buzzIndex];
+  const currentBuzz = lang === "es" ? buzzwordsEs[buzzIndex] : lang === "ko" ? buzzwordsKo[buzzIndex] : buzzwords[buzzIndex];
+
 
   return (
     <footer className="footer">
@@ -37,11 +39,19 @@ export default function Footer() {
         <div className="footer-section">
           <h7>{labels[lang].title}</h7>
           <p>
-            {lang === "ko" ? "당신을 " : "Making you "}
+            {lang === "ko" ? "당신을 ": lang === "es" ? "Haciéndote " : "Making you "}
             <span className="buzzword-wrapper">
-              <span className="buzzword">{currentBuzz}</span>
+              <span 
+                className="buzzword"
+                key={buzzIndex}
+                style={{
+                  animation: 'roll-in 0.5s ease-out forwards'
+                }}
+              >
+                {currentBuzz}
+              </span>
             </span>{" "}
-            {lang === "ko" ? " 만들어드립니다 2018년부터." : "since 2018."}
+            {lang === "ko" ? " 만들어드립니다 2018년부터.": lang === "es" ? " desde 2018" : "since 2018."}
           </p>
         </div>
 

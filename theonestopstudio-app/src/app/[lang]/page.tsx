@@ -115,6 +115,13 @@ export default function HomePage() {
           </div>
         </div>
 
+        {/* Appointment Button */}
+        <div style={{ textAlign: "center" }}>
+          <button className="button-54" style={{ width: 300 }}>
+            <a href={`/${lang}/coming-soon`}>{t.bookBtn}</a>                {/*CHANGE THE COMMING-SOON TO THE ACTUAL BOOKING!!!!*/}
+          </button>
+        </div>
+
         {/* Buttons */}
         <div style={{ textAlign: "center" }}>
           <button className="button-54">
@@ -122,9 +129,16 @@ export default function HomePage() {
           </button>
         </div>
 
+        
+
         {/* Scrolling Ads */}
         <section className="ad-container">
           <div className="scrolling-ad">
+            <span>{t.discounts}</span>
+            <span>{t.discounts}</span>
+            <span>{t.discounts}</span>
+            <span>{t.discounts}</span>
+            <span>{t.discounts}</span>
             <span>{t.discounts}</span>
             <span>{t.discounts}</span>
             <span>{t.discounts}</span>
@@ -158,16 +172,16 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Appointment Button */}
-        <div style={{ textAlign: "center" }}>
-          <button className="button-54" style={{ width: 300 }}>
-            <a href={`/${lang}/coming-soon`}>{t.bookBtn}</a>
-          </button>
-        </div>
+        
 
         {/* Final Scroller */}
-        <section className="ad-container">
+        <section className="ad-container" style={{ textAlign: "right" }}>
           <div className="scrolling-ad">
+            <span>{t.discounts}</span>
+            <span>{t.discounts}</span>
+            <span>{t.discounts}</span>
+            <span>{t.discounts}</span>
+            <span>{t.discounts}</span>
             <span>{t.discounts}</span>
             <span>{t.discounts}</span>
             <span>{t.discounts}</span>

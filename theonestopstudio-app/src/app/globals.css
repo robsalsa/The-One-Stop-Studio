@@ -107,18 +107,20 @@ body {
     transition: color 0.3s ease;
 }
 
-.burger-item a::after{
+.burger-item a::after,
+.burger-item span::after{
     content:'';
     position: absolute;
     width: 0;
     height: 2px;
     bottom: -5px;
-    right: 50%;
+    left: 50%;
     transform: translateX(-50%);
     background-color: var(--primary-color-One);
     transition: width 0.3s ease;
 }
-.burger-item a:hover::after{
+.burger-item a:hover::after,
+.burger-item span:hover::after{
     width: 100%;
 }
 
@@ -434,7 +436,7 @@ button4:active .button_top {
 
 .scrolling-ad{
     display: inline-block;
-    animation: scroll-left 20s linear infinite;
+    animation: scroll-left 50s linear infinite;
     font-size: 1rem;
     font-weight:600;
 }
@@ -597,4 +599,284 @@ button4:active .button_top {
 
 .header h20{
   color: black;
+}
+
+/* About Page Styles */
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background: var(--secondary-color-Two);
+}
+
+.pic {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.about {
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.text {
+    width: 100%;
+    max-width: 540px;
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 100px;
+}
+
+.text h5 {
+    color: var(--secondary-color-One);
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.text span {
+    color: var(--accent-color-Three);
+}
+
+.text span {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.text p {
+    color: #333;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.blizzard-wrapper {
+    display: inline-block;
+    height: 1.2em;
+    line-height: 1.2em;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+.blizzard {
+    display: inline-block;
+    color: var(--accent-color-Three);
+    font-weight: 600;
+    transform: translateY(0);
+}
+
+h5 .blizzard-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .text h5 {
+        font-size: 40px;
+    }
+
+    .text p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text h5 {
+        font-size: 20px;
+    }
+}
+
+/* Services Page Styles */
+.section-title {
+    font-family: var(--secondary-color-One);
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: -100px;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color-Three);
+    margin: 1rem auto 0;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.service-column {
+    flex: 1;
+    min-width: 400px;
+    max-width: 600px;
+    background: var(--secondary-color-Two);
+    padding: 2.5rem;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.service-column h3 {
+    font-size: 2.5rem;
+    color: var(--accent-color-Three);
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--secondary-color-Three);
+    padding-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 1.5rem;
+}
+
+.service-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.service-item h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.service-item .price {
+    font-weight: 700;
+    color: var(--secondary-color-One);
+    white-space: nowrap;
+    margin-left: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.filter-buttons button {
+    margin: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    background-color: #f77a8c;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.filter-buttons button:hover {
+    background-color: #d85d73;
+    transform: scale(1.05);
+}
+
+.filter-buttons button.active {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Booking Page Styles */
+.booking-section {
+    background-color: var(--secondary-color-Two);
+}
+
+.calendly-booking-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.booking-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-color-One);
+    font-weight: 700;
+}
+
+.appointment-info {
+    background: #f0f8ff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--primary-color-Two);
+}
+
+.duration-info {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--text-color-One);
+}
+
+.deposit-disclaimer {
+    background: #fff3cd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border-left: 4px solid #ffc107;
+}
+
+.disclaimer-text {
+    font-size: 1rem;
+    margin: 0;
+    color: #856404;
+    line-height: 1.6;
+}
+
+.calendly-inline-widget {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles for booking page */
+@media (max-width: 768px) {
+    .booking-title {
+        font-size: 2rem;
+    }
+
+    .appointment-info,
+    .deposit-disclaimer {
+        padding: 1rem;
+    }
+
+    .duration-info {
+        font-size: 1rem;
+    }
+
+    .disclaimer-text {
+        font-size: 0.9rem;
+    }
+
+    .calendly-inline-widget {
+        min-width: 100% !important;
+        height: 600px !important;
+    }
 }

@@ -37,13 +37,12 @@ export default function Header() {
     setLangMenuActive(false);
   }, [pathname]);
 
-  const handleLanguageChange = (code: string) =>{
-    let basePath ="/";
-    if (code != "en") basePath = `/${code}`;
-  
-
-    const pathParts = pathname.split("/").slice(2);
-    const newPath = pathParts.length > 0 ? `${basePath}/${pathParts.join("/")}`: basePath;
+  const handleLanguageChange = (code: string) => {
+    // Remove the current language prefix from the path
+    const pathWithoutLang = pathname.replace(/^\/(en|es|ko)/, '') || '/';
+    
+    // Construct new path with selected language (all languages use prefix)
+    const newPath = `/${code}${pathWithoutLang === '/' ? '' : pathWithoutLang}`;
     
     router.push(newPath);
   };
@@ -51,7 +50,7 @@ export default function Header() {
   return (
     <header className="header">
       <div className="container">
-        <Link href={lang === "es" ? "/es" : lang === "ko" ? "/ko" : "/"} className="flex items-center gap-3">
+        <Link href={lang === "es" ? "/es" : lang === "ko" ? "/ko" : "/en"} className="flex items-center gap-3">
           <Image
             src="/Assets/The One Stop Studio.jpg"
             alt="The One Stop Studio"
@@ -61,7 +60,7 @@ export default function Header() {
           />
         </Link>
 
-        <Link  href={lang === "es" ? "/es" : lang === "ko" ? "/ko" : "/"}>
+        <Link  href={lang === "es" ? "/es" : lang === "ko" ? "/ko" : "/en"}>
           <h20>
             The One Stop Studio
           </h20>
@@ -71,20 +70,25 @@ export default function Header() {
         <nav className="navbar">
           <ul className={`burger-menu ${burgerActive ? "active" : ""}`}>
             <li className="burger-item">
-              <Link href={lang === "es" ? "/es/services" : lang === "ko" ? "/ko/services" : "/services"}>
+              <Link href={lang === "es" ? "/es/service" : lang === "ko" ? "/ko/service" : "/en/service"}>   {/** HERE IS WHERE ALL THE LINKS ARE LOCATED!!!!!!/ */}
                 {labels[lang].services}
               </Link>
             </li>
             <li className="burger-item">
-              <Link href={lang === "es" ? "/es/about" : lang === "ko" ? "/ko/about" : "/about"}>
+              <Link href={lang === "es" ? "/es/about" : lang === "ko" ? "/ko/about" : "/en/about"}>
                 {labels[lang].about}
               </Link>
             </li>
             <li className="burger-item">
-              <Link href={lang === "es" ? "/es/coming-soon" : lang === "ko" ? "/ko/coming-soon" : "/coming-soon"}>
+              <Link href={lang === "es" ? "/es/booking" : lang === "ko" ? "/ko/booking" : "/en/booking"}>
                 {labels[lang].book}
               </Link>
             </li>
+            {/* <li className="burger-item">
+              <Link href={lang === "es" ? "/es/coming-soon" : lang === "ko" ? "/ko/coming-soon" : "/en/coming-soon"}>
+                {labels[lang].book}
+              </Link>
+            </li> */}       {/* THIS IS FOR THE COMING SOON PAGE PLEASE DO NOT CHANGE UNTIL A REAL ANNOUNCEMENT IT MADE */}
 
             {/* Dynamic Language Switcher */}
             <li className="burger-item">
