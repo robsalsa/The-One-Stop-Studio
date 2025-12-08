@@ -1,7 +1,7 @@
 import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
-import {documentInternationalization} from '@sanity/document-internationalization'
+import {documentI18n} from '@sanity/document-internationalization'
 import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
@@ -14,7 +14,7 @@ export default defineConfig({
   plugins: [
     structureTool(),
     visionTool(),
-    documentInternationalization({
+    documentI18n({
       supportedLanguages: [
         {id: 'en', title: 'English'},
         {id: 'es', title: 'Spanish'},
