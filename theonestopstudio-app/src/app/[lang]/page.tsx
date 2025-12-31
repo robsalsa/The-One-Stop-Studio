@@ -3,7 +3,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import Head from "next/head";
 import Script from "next/script";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { trackButtonClick } from "@/lib/analytics";
 
 import Header from "@/components/Header";
@@ -32,6 +32,7 @@ type Translations = {
 
 export default function HomePage() {
   const pathname = usePathname();
+  const router = useRouter();
 
   // Detect language from URL - same logic as Header/Footer
   const lang = pathname?.startsWith("/es")
@@ -102,7 +103,7 @@ export default function HomePage() {
 
       {/* <Header /> */}
 
-      <main>
+      <main id="main-content">
         {/* Slideshow */}
         <div className="slideshow-container">
           {slides.map((slide, idx) => (
@@ -132,9 +133,12 @@ export default function HomePage() {
           <button 
             className="button-54" 
             style={{ width: 300 }}
-            onClick={() => trackButtonClick('Book Now - Main CTA', 'Homepage Hero')}
+            onClick={() => {
+              trackButtonClick('Book Now - Main CTA', 'Homepage Hero');
+              router.push(`/${lang}/coming-soon`);
+            }}
           >
-            <a href={`/${lang}/coming-soon`}>{t.bookBtn}</a>                {/*CHANGE THE COMMING-SOON TO THE ACTUAL BOOKING!!!!*/}
+            {t.bookBtn}
           </button>
         </div>
 
@@ -142,9 +146,12 @@ export default function HomePage() {
         <div style={{ textAlign: "center" }}>
           <button 
             className="button-54"
-            onClick={() => trackButtonClick('View Services', 'Homepage')}
+            onClick={() => {
+              trackButtonClick('View Services', 'Homepage');
+              router.push(`/${lang}/service`);
+            }}
           >
-            <a href={`/${lang}/service`}>{t.servicesBtn}</a>
+            {t.servicesBtn}
           </button>
         </div>
 

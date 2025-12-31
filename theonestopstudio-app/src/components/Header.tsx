@@ -56,9 +56,9 @@ export default function Header() {
   };
 
   return (
-    <header className="header">
+    <header className="header" role="banner">
       <div className="container">
-        <Link href={lang === "es" ? "/es" : lang === "ko" ? "/ko" : "/en"} className="flex items-center gap-3">
+        <Link href={lang === "es" ? "/es" : lang === "ko" ? "/ko" : "/en"} className="flex items-center gap-3" aria-label="Home">
           <Image
             src="/Assets/The One Stop Studio.jpg"
             alt="The One Stop Studio"
@@ -75,7 +75,7 @@ export default function Header() {
         
         </Link>
 
-        <nav className="navbar">
+        <nav className="navbar" role="navigation" aria-label="Main navigation">
           <ul className={`burger-menu ${burgerActive ? "active" : ""}`}>
             <li className="burger-item">
               <Link 
@@ -133,14 +133,16 @@ export default function Header() {
           </ul>
         </nav>
 
-        <div
+        <button
           className={`burger ${burgerActive ? "active" : ""}`}
           onClick={() => setBurgerActive((prev) => !prev)}
+          aria-expanded={burgerActive}
+          aria-label="Toggle navigation menu"
         >
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
-        </div>
+        </button>
       </div>
     </header>
   );

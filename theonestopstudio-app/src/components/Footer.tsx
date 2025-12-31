@@ -35,7 +35,7 @@ export default function Footer() {
 
 
   return (
-    <footer className="footer">
+    <footer className="footer" role="contentinfo">
       <div className="footer-content">
         <div className="footer-section">
           <h3>{labels[lang].title}</h3>
@@ -75,6 +75,7 @@ export default function Footer() {
             target="_blank" 
             rel="noreferrer"
             onClick={() => trackOutboundLink('https://www.instagram.com/theonestopstudiollc/', 'Instagram - Footer')}
+            aria-label="Follow us on Instagram (opens in new tab)"
           >
             {labels[lang].follow}
           </a>
