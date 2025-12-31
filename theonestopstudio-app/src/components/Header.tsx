@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
+import { trackLanguageChange, trackButtonClick, trackOutboundLink } from "@/lib/analytics";
+import { setPreferredLanguage } from "@/lib/languageDetection";
 
 export default function Header() {
   const pathname = usePathname();
@@ -38,6 +40,12 @@ export default function Header() {
   }, [pathname]);
 
   const handleLanguageChange = (code: string) => {
+    // Track language change
+    trackLanguageChange(lang, code);
+    
+    // Save language preference
+    setPreferredLanguage(code as 'en' | 'es' | 'ko');
+    
     // Remove the current language prefix from the path
     const pathWithoutLang = pathname.replace(/^\/(en|es|ko)/, '') || '/';
     
@@ -48,9 +56,9 @@ export default function Header() {
   };
 
   return (
-    <header className="header">
+    <header className="header" role="banner">
       <div className="container">
-        <Link href={lang === "es" ? "/es" : lang === "ko" ? "/ko" : "/en"} className="flex items-center gap-3">
+        <Link href={lang === "es" ? "/es" : lang === "ko" ? "/ko" : "/en"} className="flex items-center gap-3" aria-label="Home">
           <Image
             src="/Assets/The One Stop Studio.jpg"
             alt="The One Stop Studio"
@@ -67,15 +75,21 @@ export default function Header() {
         
         </Link>
 
-        <nav className="navbar">
+        <nav className="navbar" role="navigation" aria-label="Main navigation">
           <ul className={`burger-menu ${burgerActive ? "active" : ""}`}>
             <li className="burger-item">
-              <Link href={lang === "es" ? "/es/service" : lang === "ko" ? "/ko/service" : "/en/service"}>   {/** HERE IS WHERE ALL THE LINKS ARE LOCATED!!!!!!/ */}
+              <Link 
+                href={lang === "es" ? "/es/service" : lang === "ko" ? "/ko/service" : "/en/service"}
+                onClick={() => trackButtonClick('Services Nav Link', 'Header')}
+              >
                 {labels[lang].services}
               </Link>
             </li>
             <li className="burger-item">
-              <Link href={lang === "es" ? "/es/about" : lang === "ko" ? "/ko/about" : "/en/about"}>
+              <Link 
+                href={lang === "es" ? "/es/about" : lang === "ko" ? "/ko/about" : "/en/about"}
+                onClick={() => trackButtonClick('About Nav Link', 'Header')}
+              >
                 {labels[lang].about}
               </Link>
             </li>
@@ -85,7 +99,10 @@ export default function Header() {
               </Link>
             </li> */}
             <li className="burger-item">
-              <Link href={lang === "es" ? "/es/coming-soon" : lang === "ko" ? "/ko/coming-soon" : "/en/coming-soon"}>
+              <Link 
+                href={lang === "es" ? "/es/coming-soon" : lang === "ko" ? "/ko/coming-soon" : "/en/coming-soon"}
+                onClick={() => trackButtonClick('Book Nav Link', 'Header')}
+              >
                 {labels[lang].book}
               </Link>
             </li>       {/* THIS IS FOR THE COMING SOON PAGE PLEASE DO NOT CHANGE UNTIL A REAL ANNOUNCEMENT IT MADE */}
@@ -116,14 +133,16 @@ export default function Header() {
           </ul>
         </nav>
 
-        <div
+        <button
           className={`burger ${burgerActive ? "active" : ""}`}
           onClick={() => setBurgerActive((prev) => !prev)}
+          aria-expanded={burgerActive}
+          aria-label="Toggle navigation menu"
         >
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
-        </div>
+        </button>
       </div>
     </header>
   );

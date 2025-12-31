@@ -1,0 +1,15 @@
+# *
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://theonestopstudio.com/sitemap.xml
+
+# Disallow admin or private pages if any
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow all crawlers to access assets
+Allow: /Assets/
+Allow: /_next/static/
+Allow: /localization/

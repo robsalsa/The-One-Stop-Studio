@@ -2,13 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
+import { trackFilterChange, trackServiceView } from '@/lib/analytics';
 import translations from '@/../public/localization/translationServicePage.json';
-// import {Metadata} from 'next';
 
-// export const metadata: Metadata = {
-//   title: "Service Page - The One Stop Studio",
-//   description: "All Services and Filters for said services"
-// }
 
 
 type Service = {
@@ -53,10 +49,21 @@ export default function ServicesPage() {
   // State for filter
   const [activeFilter, setActiveFilter] = useState<string>("all");
 
+  // Track page view on mount
+  useEffect(() => {
+    trackServiceView('Service Page', 'All Services');
+  }, []);
+
   // Filter services based on active filter
   const filteredServices = activeFilter === "all" 
     ? t.servicesData 
     : t.servicesData.filter(cat => cat.category === activeFilter);
+
+  // Handle filter change with tracking
+  const handleFilterChange = (filterName: string) => {
+    setActiveFilter(filterName);
+    trackFilterChange(filterName);
+  };
 
   return (
     <main>
@@ -67,37 +74,37 @@ export default function ServicesPage() {
           <div className="filter-buttons">
             <button 
               className={activeFilter === "all" ? "active" : ""}
-              onClick={() => setActiveFilter("all")}
+              onClick={() => handleFilterChange("all")}
             >
               {t.filterAll}
             </button>
             <button 
               className={activeFilter === (lang === "en" ? "Barber Services" : lang === "es" ? "Servicios de Barbería" : "이발 서비스") ? "active" : ""}
-              onClick={() => setActiveFilter(lang === "en" ? "Barber Services" : lang === "es" ? "Servicios de Barbería" : "이발 서비스")}
+              onClick={() => handleFilterChange(lang === "en" ? "Barber Services" : lang === "es" ? "Servicios de Barbería" : "이발 서비스")}
             >
               {t.filterBarber}
             </button>
             <button 
               className={activeFilter === (lang === "en" ? "Beauty Services" : lang === "es" ? "Servicios de Belleza" : "뷰티 서비스") ? "active" : ""}
-              onClick={() => setActiveFilter(lang === "en" ? "Beauty Services" : lang === "es" ? "Servicios de Belleza" : "뷰티 서비스")}
+              onClick={() => handleFilterChange(lang === "en" ? "Beauty Services" : lang === "es" ? "Servicios de Belleza" : "뷰티 서비스")}
             >
               {t.filterBeauty}
             </button>
             <button 
               className={activeFilter === (lang === "en" ? "Other/Add-On Services" : lang === "es" ? "Otros/Servicios Adicionales" : "기타/추가 서비스") ? "active" : ""}
-              onClick={() => setActiveFilter(lang === "en" ? "Other/Add-On Services" : lang === "es" ? "Otros/Servicios Adicionales" : "기타/추가 서비스")}
+              onClick={() => handleFilterChange(lang === "en" ? "Other/Add-On Services" : lang === "es" ? "Otros/Servicios Adicionales" : "기타/추가 서비스")}
             >
               {t.filterOther}
             </button>
             <button 
               className={activeFilter === (lang === "en" ? "Permanent Cosmetic Services" : lang === "es" ? "Servicios de Cosméticos Permanentes" : "영구 화장 서비스") ? "active" : ""}
-              onClick={() => setActiveFilter(lang === "en" ? "Permanent Cosmetic Services" : lang === "es" ? "Servicios de Cosméticos Permanentes" : "영구 화장 서비스")}
+              onClick={() => handleFilterChange(lang === "en" ? "Permanent Cosmetic Services" : lang === "es" ? "Servicios de Cosméticos Permanentes" : "영구 화장 서비스")}
             >
               {t.filterPermanent}
             </button>
             <button 
               className={activeFilter === (lang === "en" ? "Piercing Services" : lang === "es" ? "Servicios de Perforación" : "피어싱 서비스") ? "active" : ""}
-              onClick={() => setActiveFilter(lang === "en" ? "Piercing Services" : lang === "es" ? "Servicios de Perforación" : "피어싱 서비스")}
+              onClick={() => handleFilterChange(lang === "en" ? "Piercing Services" : lang === "es" ? "Servicios de Perforación" : "피어싱 서비스")}
             >
               {t.filterPiercing}
             </button>
