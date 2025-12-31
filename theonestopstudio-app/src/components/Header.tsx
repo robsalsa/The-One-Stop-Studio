@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { trackLanguageChange, trackButtonClick, trackOutboundLink } from "@/lib/analytics";
+import { setPreferredLanguage } from "@/lib/languageDetection";
 
 export default function Header() {
   const pathname = usePathname();
@@ -41,6 +42,9 @@ export default function Header() {
   const handleLanguageChange = (code: string) => {
     // Track language change
     trackLanguageChange(lang, code);
+    
+    // Save language preference
+    setPreferredLanguage(code as 'en' | 'es' | 'ko');
     
     // Remove the current language prefix from the path
     const pathWithoutLang = pathname.replace(/^\/(en|es|ko)/, '') || '/';
