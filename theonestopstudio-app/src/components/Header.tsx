@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
+import { trackLanguageChange, trackButtonClick, trackOutboundLink } from "@/lib/analytics";
 
 export default function Header() {
   const pathname = usePathname();
@@ -38,6 +39,9 @@ export default function Header() {
   }, [pathname]);
 
   const handleLanguageChange = (code: string) => {
+    // Track language change
+    trackLanguageChange(lang, code);
+    
     // Remove the current language prefix from the path
     const pathWithoutLang = pathname.replace(/^\/(en|es|ko)/, '') || '/';
     
@@ -70,12 +74,18 @@ export default function Header() {
         <nav className="navbar">
           <ul className={`burger-menu ${burgerActive ? "active" : ""}`}>
             <li className="burger-item">
-              <Link href={lang === "es" ? "/es/service" : lang === "ko" ? "/ko/service" : "/en/service"}>   {/** HERE IS WHERE ALL THE LINKS ARE LOCATED!!!!!!/ */}
+              <Link 
+                href={lang === "es" ? "/es/service" : lang === "ko" ? "/ko/service" : "/en/service"}
+                onClick={() => trackButtonClick('Services Nav Link', 'Header')}
+              >
                 {labels[lang].services}
               </Link>
             </li>
             <li className="burger-item">
-              <Link href={lang === "es" ? "/es/about" : lang === "ko" ? "/ko/about" : "/en/about"}>
+              <Link 
+                href={lang === "es" ? "/es/about" : lang === "ko" ? "/ko/about" : "/en/about"}
+                onClick={() => trackButtonClick('About Nav Link', 'Header')}
+              >
                 {labels[lang].about}
               </Link>
             </li>
@@ -85,7 +95,10 @@ export default function Header() {
               </Link>
             </li> */}
             <li className="burger-item">
-              <Link href={lang === "es" ? "/es/coming-soon" : lang === "ko" ? "/ko/coming-soon" : "/en/coming-soon"}>
+              <Link 
+                href={lang === "es" ? "/es/coming-soon" : lang === "ko" ? "/ko/coming-soon" : "/en/coming-soon"}
+                onClick={() => trackButtonClick('Book Nav Link', 'Header')}
+              >
                 {labels[lang].book}
               </Link>
             </li>       {/* THIS IS FOR THE COMING SOON PAGE PLEASE DO NOT CHANGE UNTIL A REAL ANNOUNCEMENT IT MADE */}

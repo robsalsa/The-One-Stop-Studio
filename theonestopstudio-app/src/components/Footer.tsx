@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import { trackOutboundLink } from "@/lib/analytics";
 
 export default function Footer() {
   const pathname = usePathname();
@@ -69,7 +70,12 @@ export default function Footer() {
         </div>
 
         <div className="footer-section">
-          <a href="https://www.instagram.com/theonestopstudiollc/" target="_blank" rel="noreferrer">
+          <a 
+            href="https://www.instagram.com/theonestopstudiollc/" 
+            target="_blank" 
+            rel="noreferrer"
+            onClick={() => trackOutboundLink('https://www.instagram.com/theonestopstudiollc/', 'Instagram - Footer')}
+          >
             {labels[lang].follow}
           </a>
         </div>

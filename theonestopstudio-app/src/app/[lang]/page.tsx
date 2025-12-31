@@ -4,6 +4,7 @@ import React, { useEffect, useState, useRef } from "react";
 import Head from "next/head";
 import Script from "next/script";
 import { usePathname } from "next/navigation";
+import { trackButtonClick } from "@/lib/analytics";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -71,6 +72,12 @@ export default function HomePage() {
 
   const goToSlide = (n: number) => setSlideIndex(n);
 
+  // Track slideshow dot clicks
+  const handleDotClick = (index: number) => {
+    goToSlide(index);
+    trackButtonClick(`Slideshow Dot ${index + 1}`, 'Homepage Slideshow');
+  };
+
   return (
     <>
       <Head>
@@ -112,7 +119,7 @@ export default function HomePage() {
               <span
                 key={idx}
                 className={`dot ${slideIndex === idx ? "active" : ""}`}
-                onClick={() => goToSlide(idx)}
+                onClick={() => handleDotClick(idx)}
                 role="button"
                 aria-label={`Go to slide ${idx + 1}`}
               />
@@ -122,14 +129,21 @@ export default function HomePage() {
 
         {/* Appointment Button */}
         <div style={{ textAlign: "center" }}>
-          <button className="button-54" style={{ width: 300 }}>
+          <button 
+            className="button-54" 
+            style={{ width: 300 }}
+            onClick={() => trackButtonClick('Book Now - Main CTA', 'Homepage Hero')}
+          >
             <a href={`/${lang}/coming-soon`}>{t.bookBtn}</a>                {/*CHANGE THE COMMING-SOON TO THE ACTUAL BOOKING!!!!*/}
           </button>
         </div>
 
         {/* Buttons */}
         <div style={{ textAlign: "center" }}>
-          <button className="button-54">
+          <button 
+            className="button-54"
+            onClick={() => trackButtonClick('View Services', 'Homepage')}
+          >
             <a href={`/${lang}/service`}>{t.servicesBtn}</a>
           </button>
         </div>
