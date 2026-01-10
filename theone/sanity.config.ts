@@ -20,7 +20,7 @@ export default defineConfig({
         {id: 'es', title: 'Spanish'},
         {id: 'ko', title:'Korean'},
       ],
-      schemaTypes: ['samplePage', 'servicePage', 'aboutPage', 'comingSoonPage'],
+      schemaTypes: ['samplePage', 'servicePage', 'aboutPage', 'comingSoonPage', 'modalPopUp'],
     }),
   ],
 

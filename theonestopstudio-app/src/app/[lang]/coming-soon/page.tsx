@@ -17,8 +17,9 @@ async function getComingSoonData(lang: string): Promise<ComingSoonData | null> {
       description
     }`;
     
-    const data = await client.fetch(query, { lang });
-    console.log('Sanity data for coming soon page:', data, 'language:', lang);
+    const data = await client.fetch(query, { lang }, { 
+      next: { revalidate: 3600 } // Cache for 1 hour
+    });
     return data;
   } catch (error) {
     console.error('Error fetching coming soon data:', error);
