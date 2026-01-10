@@ -5,9 +5,11 @@ import Head from "next/head";
 import Script from "next/script";
 import { usePathname, useRouter } from "next/navigation";
 import { trackButtonClick } from "@/lib/analytics";
+import { client } from "@/lib/sanity";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ModalPopup from "@/components/ModalPopup";
 import translations from "@/../public/localization/translationHomePage.json";
 
 type Translations = {
@@ -30,9 +32,17 @@ type Translations = {
   bookBtn: string;
 };
 
+type ModalData = {
+  title: string;
+  description: string;
+  href?: string;
+};
+
 export default function HomePage() {
   const pathname = usePathname();
   const router = useRouter();
+  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [modalData, setModalData] = useState<ModalData | null>(null);
 
   // Detect language from URL - same logic as Header/Footer
   const lang = pathname?.startsWith("/es")
@@ -40,6 +50,29 @@ export default function HomePage() {
     : pathname?.startsWith("/ko")
     ? "ko"
     : "en";
+
+  // Open modal whenever language changes
+  useEffect(() => {
+    setIsModalOpen(true);
+  }, [lang]);
+
+  // Fetch modal data from Sanity
+  useEffect(() => {
+    const fetchModalData = async () => {
+      try {
+        const query = `*[_type == "modalPopUp" && language == $lang][0]{
+          title,
+          description,
+          href
+        }`;
+        const data = await client.fetch(query, { lang });
+        setModalData(data);
+      } catch (error) {
+        console.error("Error fetching modal data:", error);
+      }
+    };
+    fetchModalData();
+  }, [lang]);
 
   // Set page title for Google Analytics
   useEffect(() => {
@@ -102,7 +135,6 @@ export default function HomePage() {
       </Script>
 
       {/* <Header /> */}
-
       <main id="main-content">
         {/* Slideshow */}
         <div className="slideshow-container">
@@ -142,7 +174,7 @@ export default function HomePage() {
           </button>
         </div>
 
-        {/* Buttons */}
+        {/* Buttons with Links */}
         <div style={{ textAlign: "center" }}>
           <button 
             className="button-54"
@@ -157,7 +189,7 @@ export default function HomePage() {
 
         
 
-        {/* Scrolling Ads */}
+        {/* Scrolling Banner (Top) */}
         <section className="ad-container">
           <div className="scrolling-ad">
             <span>{t.discounts}</span>
@@ -200,7 +232,7 @@ export default function HomePage() {
 
         
 
-        {/* Final Scroller */}
+        {/* Scrolling Banner (Bottom) */}
         <section className="ad-container" style={{ textAlign: "right" }}>
           <div className="scrolling-ad">
             <span>{t.discounts}</span>
@@ -214,6 +246,18 @@ export default function HomePage() {
           </div>
         </section>
       </main>
+
+      {/* Modal pop-up from Sanity CMS */}
+      {modalData && (
+        <ModalPopup
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          title={modalData.title}
+          description={modalData.description}
+          href={modalData.href}
+          language={lang}
+        />
+      )}
 
       {/* <Footer /> */}
     </>
