@@ -28,7 +28,7 @@ export default function BookingCALPage({ params }: BookingCALPageProps) {
     <div className="w-full h-screen min-h-screen">
       <Cal
         namespace="test-long-hour-service"
-        calLink="robert-salazar-vasquez-5a8hw2/test-long-hour-service"
+        calLink="the-one-stop-shop/test-long-hour-service"
         style={{ width: "100%", height: "100%", overflow: "scroll", marginTop: "150px" }}
         config={{ layout: "month_view" }}
       />
