@@ -2,35 +2,22 @@
 
 import Cal, { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
-import { trackCalendarInteraction } from "@/lib/analytics";
 
-interface BookingCALPageProps {
-  params: {
-    lang: string;
-  };
-}
-
-export default function BookingCALPage({ params }: BookingCALPageProps) {
+export default function BookingCALPage() {
   useEffect(() => {
-    // Track that user landed on booking page
-    trackCalendarInteraction('booking_page_view');
-    
     (async function () {
-      const cal = await getCalApi({ namespace: "test-long-hour-service" });
+      const cal = await getCalApi({ namespace: "test-booking" });
       cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
-      
-      // Track calendar loaded
-      trackCalendarInteraction('calendar_loaded');
     })();
   }, []);
 
   return (
     <div className="w-full h-screen min-h-screen">
       <Cal
-        namespace="test-long-hour-service"
-        calLink="the-one-stop-shop/test-long-hour-service"
-        style={{ width: "100%", height: "100%", overflow: "scroll", marginTop: "150px" }}
-        config={{ layout: "month_view" }}
+        namespace="test-booking"
+        calLink="the-one-stop-shop-wendy/test-booking"
+        style={{ width: "100%", height: "100%", overflow: "scroll", marginTop: "200px" }}
+        config={{ layout: "month_view", useSlotsViewOnSmallScreen: true }}
       />
     </div>
   );
