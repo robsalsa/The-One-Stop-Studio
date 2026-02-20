@@ -27,7 +27,9 @@
           { "name": "Mustache", "price": "$20" },
           { "name": "Line Up (Razor around the perimeter of Hair)", "price": "$30" },
           { "name": "Shape Up (Razor around the perimeter of Hair and Beard)", "price": "$40" },
-          { "name": "Haircut Design", "price": "+$10 (may vary on design)" }
+          { "name": "Haircut Design", "price": "+$10 (may vary on design)" },
+          { "name": "Kids", "price": "20" }
+
         ]
       },
       {
