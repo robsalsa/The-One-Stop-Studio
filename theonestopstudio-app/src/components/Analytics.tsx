@@ -26,9 +26,6 @@ function AnalyticsPageViewInner() {
       } else if (pathname?.includes("/booking")) {
         pageType = "booking";
         pageTitle = "Book Appointment - The One Stop Studio";
-      } else if (pathname?.includes("/coming-soon")) {
-        pageType = "coming-soon";
-        pageTitle = "Coming Soon - The One Stop Studio";
       }
 
       const url = pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : "");

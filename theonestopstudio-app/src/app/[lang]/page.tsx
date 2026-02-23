@@ -135,7 +135,7 @@ export default function HomePage() {
             style={{ width: 300 }}
             onClick={() => {
               trackButtonClick('Book Now - Main CTA', 'Homepage Hero');
-              router.push(`/${lang}/coming-soon`);
+              router.push(`/${lang}/booking`);
             }}
           >
             {t.bookBtn}
