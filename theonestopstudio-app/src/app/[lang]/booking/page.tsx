@@ -1,48 +1,24 @@
-"use client";
+'use client';
 
-import React, { useEffect } from 'react';
-import { usePathname } from 'next/navigation';
-import translations from '@/../public/localization/translationBookingPage.json';
-import CalendlyWidget from '@/components/CalendlyWidget';
+import Cal, { getCalApi } from "@calcom/embed-react";
+import { useEffect } from "react";
 
-type Translations = {
-  pageTitle: string;
-  appointmentDuration: string;
-  depositDisclaimer: string;
-  calendlyUrl: string;
-};
-
-export default function BookingPage() {
-  const pathname = usePathname();
-
-  // Detect language from URL
-  const lang = pathname?.startsWith("/es")
-    ? "es"
-    : pathname?.startsWith("/ko")
-    ? "ko"
-    : "en";
-
-  // Set page title for Google Analytics
+export default function BookingCALPage() {
   useEffect(() => {
-    document.title = "Book Appointment - The One Stop Studio";
+    (async function () {
+      const cal = await getCalApi({ namespace: "test-booking" });
+      cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
+    })();
   }, []);
 
-  // Get translations for current language
-  const t: Translations = translations[lang as keyof typeof translations] || translations.en;
-
   return (
-    <main>
-      <section className="booking-section" style={{ paddingTop: '10rem', paddingBottom: '5rem' }}>
-        <div className="container">
-          <CalendlyWidget
-            lang={lang}
-            appointmentDuration={t.appointmentDuration}
-            depositDisclaimer={t.depositDisclaimer}
-            bookingTitle={t.pageTitle}
-            calendlyUrl={t.calendlyUrl}
-          />
-        </div>
-      </section>
-    </main>
+    <div className="w-full h-screen min-h-screen">
+      <Cal
+        namespace="test-booking"
+        calLink="the-one-stop-shop-wendy/test-booking"
+        style={{ width: "100%", height: "100%", overflow: "scroll", marginTop: "150px" }}
+        config={{ layout: "month_view", useSlotsViewOnSmallScreen: "true" }}
+      />
+    </div>
   );
 }
