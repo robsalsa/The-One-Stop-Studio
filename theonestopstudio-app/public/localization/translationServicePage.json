@@ -27,7 +27,7 @@
           { "name": "Mustache", "price": "$20" },
           { "name": "Line Up (Razor around the perimeter of Hair)", "price": "$35" },
           { "name": "Shape Up (Razor around the perimeter of Hair and Beard)", "price": "$40" },
-          { "name": "Haircut Design", "price": "$10+ (may vary on design)" },
+          { "name": "Haircut Design (may vary on design)", "price": "$10+" },
           { "name": "Kids Haircut", "price": "$35" }
 
         ]
@@ -66,6 +66,7 @@
         "services": [
           { "name": "Eyebrow Threading / Waxed", "price": "$20" },
           { "name": "Eyebrows & Lip", "price": "$30" },
+          { "name": "Eyebrows & Tint", "price": "$50" },
           { "name": "Full Face (NOT INCLUDING EYEBROWS)", "price": "$25" },
           { "name": "Full Face & Brows", "price": "$45" },
           { "name": "Lash Lift", "price": "$50" },
@@ -120,7 +121,7 @@
           { "name": "Bigote", "price": "$20" },
           { "name": "Line Up (Navaja alrededor del perímetro del cabello)", "price": "$35" },
           { "name": "Shape Up (Navaja alrededor del perímetro del cabello y barba)", "price": "$40" },
-          { "name": "Diseño de Corte de Cabello", "price": "$10+ (puede variar según el diseño)" },
+          { "name": "Diseño de Corte de Cabello (puede variar según el diseño)", "price": "$10+" },
           { "name": "Corte de Cabello para Ninos", "price": "$35" }        ]
       },
       {
@@ -157,6 +158,7 @@
         "services": [
           { "name": "Depilación de Cejas con Hilo / Cera", "price": "$20" },
           { "name": "Cejas y Labio", "price": "$30" },
+          { "name": "Cejas y Tinte", "price": "$50" },
           { "name": "Cara Completa (SIN INCLUIR CEJAS)", "price": "$25" },
           { "name": "Cara Completa y Cejas", "price": "$45" },
           { "name": "Lifting de Pestañas", "price": "$50" },
@@ -211,7 +213,7 @@
           { "name": "콧수염", "price": "$20" },
           { "name": "라인업 (머리 둘레에 면도기)", "price": "$35" },
           { "name": "쉐이프업 (머리와 수염 둘레에 면도기)", "price": "$40" },
-          { "name": "헤어컷 디자인", "price": "$10+ (디자인에 따라 다를 수 있음)" },
+          { "name": "헤어컷 디자인 (디자인에 따라 다를 수 있음)", "price": "$10+" },
           { "name": "어린이 이발", "price": "$35" }
         ]
       },
@@ -249,6 +251,7 @@
         "services": [
           { "name": "눈썹 실 / 왁싱", "price": "$20" },
           { "name": "눈썹 & 입술", "price": "$30" },
+          { "name": "눈썹 & 틴트 ", "price": "$50" },
           { "name": "풀 페이스 (눈썹 불포함)", "price": "$25" },
           { "name": "풀 페이스 & 눈썹", "price": "$45" },
           { "name": "래쉬 리프트", "price": "$50" },
