@@ -18,7 +18,7 @@ export default function BookingPage() {
       namespace="booking"
       calLink="the-one-stop-shop-wendy/booking"
       style={{ width: "100%", height: "100%", overflow: "scroll" }}
-      config={{ layout: "month_view", useSlotsViewOnSmallScreen: true }}
+      config={{ layout: "month_view", useSlotsViewOnSmallScreen: "true" }}
     />
   );
 }
