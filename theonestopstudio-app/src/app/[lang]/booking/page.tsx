@@ -6,7 +6,7 @@ import { useEffect } from "react";
 export default function BookingCALPage() {
   useEffect(() => {
     (async function () {
-      const cal = await getCalApi({ namespace: "test-booking" });
+      const cal = await getCalApi({ namespace: "booking" });
       cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
     })();
   }, []);
