@@ -17,7 +17,7 @@ export default function BookingPage() {
     <Cal
       namespace="booking"
       calLink="the-one-stop-shop-wendy/booking"
-      style={{ width: "100%", height: "100%", overflow: "scroll" }}
+      style={{ width: "100%", height: "100%", overflow: "scroll", marginTop: "150px" }}
       config={{ layout: "month_view", useSlotsViewOnSmallScreen: "true" }}
     />
   );
