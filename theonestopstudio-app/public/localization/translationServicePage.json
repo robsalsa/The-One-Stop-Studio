@@ -22,12 +22,12 @@
           { "name": "Haircut & Beard & Eyebrows", "price": "$90" },
           { "name": "Haircut & Beard & Facial", "price": "$90" },
           { "name": "Combo B (Haircut & Beard & Hot towel Massage & Facial & Eyebrows)", "price": "$110" },
-          { "name": "Haircut & Braids", "price": "$90+ (prices vary on braid style)" },
+          { "name": "Haircut & Braids (prices vary on braid style)", "price": "$90+" },
           { "name": "Beard Only", "price": "$30" },
           { "name": "Mustache", "price": "$20" },
           { "name": "Line Up (Razor around the perimeter of Hair)", "price": "$35" },
           { "name": "Shape Up (Razor around the perimeter of Hair and Beard)", "price": "$40" },
-          { "name": "Haircut Design", "price": "+$10 (may vary on design)" },
+          { "name": "Haircut Design", "price": "$10+ (may vary on design)" },
           { "name": "Kids Haircut", "price": "$35" }
 
         ]
@@ -115,12 +115,12 @@
           { "name": "Corte de Cabello y Barba y Cejas", "price": "$90" },
           { "name": "Corte de Cabello y Barba y Facial", "price": "$90" },
           { "name": "Combo B (Corte de Cabello & Barba & Masaje de Toalla Caliente & Facial & Cejas)", "price": "$110" },
-          { "name": "Corte de Cabello y Trenzas", "price": "$90+ (los precios varían según el estilo de trenza)" },
+          { "name": "Corte de Cabello y Trenzas (los precios varían según el estilo de trenza)", "price": "$90+" },
           { "name": "Solo Barba", "price": "$30" },
           { "name": "Bigote", "price": "$20" },
           { "name": "Line Up (Navaja alrededor del perímetro del cabello)", "price": "$35" },
           { "name": "Shape Up (Navaja alrededor del perímetro del cabello y barba)", "price": "$40" },
-          { "name": "Diseño de Corte de Cabello", "price": "+$10 (puede variar según el diseño)" },
+          { "name": "Diseño de Corte de Cabello", "price": "$10+ (puede variar según el diseño)" },
           { "name": "Corte de Cabello para Ninos", "price": "$35" }        ]
       },
       {
@@ -206,7 +206,7 @@
           { "name": "헤어컷 & 수염 & 눈썹", "price": "$90" },
           { "name": "헤어컷 & 수염 & 페이셜", "price": "$90" },
           { "name": "콤보 B (헤어컷 & 수염 & 뜨거운 타월 마사지 & 페이셜 & 눈썹)", "price": "$110" },
-          { "name": "헤어컷 & 땋기", "price": "$90+ (땋기 스타일에 따라 가격이 다름)" },
+          { "name": "헤어컷 & 땋기 (땋기 스타일에 따라 가격이 다름)", "price": "$90+" },
           { "name": "수염만", "price": "$30" },
           { "name": "콧수염", "price": "$20" },
           { "name": "라인업 (머리 둘레에 면도기)", "price": "$35" },
