@@ -27,7 +27,7 @@
           { "name": "Mustache", "price": "$20" },
           { "name": "Line Up (Razor around the perimeter of Hair)", "price": "$35" },
           { "name": "Shape Up (Razor around the perimeter of Hair and Beard)", "price": "$40" },
-          { "name": "Haircut Design", "price": "$10+ (may vary on design)" },
+          { "name": "Haircut Design (may vary on design)", "price": "$10+" },
           { "name": "Kids Haircut", "price": "$35" }
 
         ]
@@ -120,7 +120,7 @@
           { "name": "Bigote", "price": "$20" },
           { "name": "Line Up (Navaja alrededor del perímetro del cabello)", "price": "$35" },
           { "name": "Shape Up (Navaja alrededor del perímetro del cabello y barba)", "price": "$40" },
-          { "name": "Diseño de Corte de Cabello", "price": "$10+ (puede variar según el diseño)" },
+          { "name": "Diseño de Corte de Cabello (puede variar según el diseño)", "price": "$10+" },
           { "name": "Corte de Cabello para Ninos", "price": "$35" }        ]
       },
       {
@@ -211,7 +211,7 @@
           { "name": "콧수염", "price": "$20" },
           { "name": "라인업 (머리 둘레에 면도기)", "price": "$35" },
           { "name": "쉐이프업 (머리와 수염 둘레에 면도기)", "price": "$40" },
-          { "name": "헤어컷 디자인", "price": "$10+ (디자인에 따라 다를 수 있음)" },
+          { "name": "헤어컷 디자인 (디자인에 따라 다를 수 있음)", "price": "$10+" },
           { "name": "어린이 이발", "price": "$35" }
         ]
       },
