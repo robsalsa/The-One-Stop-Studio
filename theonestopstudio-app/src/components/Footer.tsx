@@ -84,6 +84,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <p>&copy; The One Stop Studio .llc, All Rights Reserved.</p>
+        
       </div>
     </footer>
   );

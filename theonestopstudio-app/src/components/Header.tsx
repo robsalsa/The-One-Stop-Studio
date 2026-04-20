@@ -60,7 +60,7 @@ export default function Header() {
       <div className="container">
         <Link href={lang === "es" ? "/es" : lang === "ko" ? "/ko" : "/en"} className="flex items-center gap-3" aria-label="Home">
           <Image
-            src="/Assets/The One Stop Studio.jpg"
+            src="/Assets/The One Stop Studio.png"
             alt="The One Stop Studio"
             width={55}
             height={50}
